@@ -1,9 +1,16 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
-function ExternalForward() {
+const ExternalRedirect = () => {
   useEffect(() => {
+    // Overwrites history so the back button works correctly
     window.location.replace('https://github.com/rydal05');
   }, []);
 
-  return <p>Leaving our application...</p>;
-}
+  return (
+    <div>
+      <p>Redirecting you to the external site...</p>
+    </div>
+  );
+};
+
+export default ExternalRedirect;
