@@ -1,11 +1,9 @@
 import { useEffect } from 'react';
 
-function AutoforwardPage() {
-    const navigate = useNavigate();
+function ExternalForward() {
+  useEffect(() => {
+    window.location.replace('https://github.com/rydal05');
+  }, []);
 
-    useEffect(() => {
-        window.location.replace('https://github.com/rydal05');
-    }, []);
-
-    return <p>Redirecting you...</p>;
+  return <p>Leaving our application...</p>;
 }
