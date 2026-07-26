@@ -1,11 +1,11 @@
 import './App.css'
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 
-import { Home } from './pages/home'
-import { About } from './pages/about'
-import { Portfolio } from './pages/portfolio'
-import { Contact } from './pages/contact'
-import { Layout } from './Layout'
+import Home from './pages/home'
+import About from './pages/about'
+import Portfolio from './pages/portfolio'
+import Contact from './pages/contact'
+import Layout from './Layout'
 
 
 function App() {
