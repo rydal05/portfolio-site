@@ -11,7 +11,7 @@
     overflow: hidden;
 }
 
-.navbar a {
+.navbar Link {
     color: white;
     text-decoration: none;
     padding: 15px;
@@ -20,10 +20,10 @@
     border-radius: 15px;
 }
 
-.navbar a:hover {
+.navbar Link:hover {
     background-color: hsl(0,0%,25%);
 
 }
-.navbar li{
+.navbar button{
     float:left;
 }
