@@ -5,28 +5,25 @@ const navigation = [
     { name: 'About', href: '/about' },
     { name: 'Portfolio', href: '/portfolio' },
     { name: 'Contact', href: '/contact' },
-    { name: 'Skills',href: '/skills'},
+    { name: 'Skills', href: '/skills' },
 ]
 
 export function Header() {
     return (
         <>
-            <header className="flex list-none p-0 gap-4">
-                <div className="font-mono">Ryan Dalton</div>
+            <header className="flex items-center justify-between">
                 <div>
-                    <ul className="flex gap-4">
-                        <li>Github logo</li>
-                        <li>Linkedin logo</li>
-                        <li>Tertiary logo</li>
-                    </ul>
+                    <div className="font-mono text-left m-2">Ryan Dalton</div>
                 </div>
-                {navigation.map((item) => {
-                    return (
-                        <Link to={item.href} key={item.name}>
-                            <button className="m-4 font-mono hover:bg-sky-300">{item.name}</button>
-                        </Link>
-                    )
-                })}
+                <div className="flex-col">
+                    {navigation.map((item) => {
+                        return (
+                            <Link to={item.href} key={item.name}>
+                                <button className="m-4 font-mono gap-4 hover:bg-sky-300">{item.name}</button>
+                            </Link>
+                        )
+                    })}
+                </div>
             </header>
 
         </>
