@@ -7,6 +7,13 @@ import Contact from './pages/contact'
 import Layout from './Layout'
 import WindWakerWater from './components/ParallaxBG'
 
+const navigation = [
+  { name: 'Home', href: '', element: Home },
+  { name: 'About', href: '/about', element: About },
+  { name: 'Portfolio', href: '/portfolio', element: Portfolio },
+  { name: 'Contact', href: '/contact', element: Contact },
+]
+
 function App() {
 
   return (
@@ -17,10 +24,16 @@ function App() {
         <Routes>
 
           <Route element={<Layout />}>
-            <Route path='/' element={<Home />} />
-            <Route path='/portfolio' element={<Portfolio />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/contact' element={<Contact />} />
+            {navigation.map((item) => {
+              const Component = item.element;
+              return (
+                <Route
+                  key={item.name}
+                  path={item.href}
+                  element={<Component />}
+                />
+              );
+            })}
           </Route>
 
         </Routes>
