@@ -10,6 +10,7 @@ import Layout from './Layout'
 import WindWakerWater from './components/ParallaxBG'
 import Skills from './pages/Skills'
 
+//TODO: update this to dynamically pull from pages in the pages subdirectory or reference a centralized dictionary for easier less confusing accesses
 const navigation = [
   { name: 'Home', href: '', element: Home },
   { name: 'About', href: '/about', element: About },
@@ -31,6 +32,7 @@ function App() {
             {navigation.map((item) => {
               const Component = item.element;
               return (
+                
                 <Route
                   key={item.name}
                   path={item.href}
