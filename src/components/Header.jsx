@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-//update this to dynamically pull from pages in the pages subdirectory or reference a centralized dictionary for easier less confusing accesses
+//TODO: update this to dynamically pull from pages in the pages subdirectory or reference a centralized dictionary for easier less confusing accesses
 
 const navigation = [
     { name: 'Home', href: '' },
