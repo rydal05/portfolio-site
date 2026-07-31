@@ -10,12 +10,9 @@ function Home() {
 			</h2>
 			<p></p>
 			<div>
-				<TextBlock title="HELLO" text="my name is anderdingus" />
+				<TextBlock title="Welcome!" text="I'm still working out what I should use this page for, I would recommend checking out any of the other pages. They are immeasurably more well utilized than this page is." />
 			</div>
 
-			<TextBlock title="HELLO" text="my name is anderdingus" />
-			<TextBlock title="HELLO" text="my name is anderdingus" />
-			<TextBlock title="HELLO" text="my name is anderdingus" />
 		</>
 	);
 }
