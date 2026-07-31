@@ -1,15 +1,3 @@
-<<<<<<< HEAD
- function Home() {
-    return (
-        <>
-            <h1>This is the home page</h1>
-            <p>it dont look like it but believe me im working on it</p>
-            <p>testing automatic deployment. please bear with me in these trying times.</p>
-            <p>attempt 2</p>
-            <p>ok it works thanks for standing by.</p>
-        </>
-    )
-=======
 import CycleText from "../components/CycleText";
 import TextBlock from "../components/TextBlock";
 
@@ -27,7 +15,6 @@ function Home() {
 
 		</>
 	);
->>>>>>> minor
 }
 
 export default Home;
