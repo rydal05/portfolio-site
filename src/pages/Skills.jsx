@@ -35,7 +35,8 @@ function Skills() {
 				<h1>AI & ML</h1>
 				<ul>
 					<li>Hugging Face</li>
-					Ollama Continue AI
+					<li>Ollama</li>
+					<li>Continue Coding Agent</li>
 				</ul>
 			</div>
 
