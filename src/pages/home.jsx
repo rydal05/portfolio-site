@@ -1,11 +1,23 @@
- function Home() {
-    return (
-        <>
-            <h1>This is the home page</h1>
-            <p>it dont look like it but believe me im working on it</p>
-            <p>testing automatic deployment. please bear with me in these trying times.</p>
-        </>
-    )
+import CycleText from "../components/CycleText";
+import TextBlock from "../components/TextBlock";
+
+function Home() {
+	return (
+		<>
+			<h1>Hi, I'm Ryan! 👋🏽</h1>
+			<h2>
+				<CycleText />
+			</h2>
+			<p></p>
+			<div>
+				<TextBlock title="HELLO" text="my name is anderdingus" />
+			</div>
+
+			<TextBlock title="HELLO" text="my name is anderdingus" />
+			<TextBlock title="HELLO" text="my name is anderdingus" />
+			<TextBlock title="HELLO" text="my name is anderdingus" />
+		</>
+	);
 }
 
-export default Home
+export default Home;
