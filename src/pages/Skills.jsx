@@ -1,41 +1,42 @@
 import ListModal from "../components/ListModal";
 
 const frameworks = [
-	{ name: "React", icon: "" },
-	{ name: "Flask", icon: "/about" },
-	{ name: "Svelte", icon: "/portfolio" },
-	{ name: "SQLite", icon: "/contact" },
-	{ name: "BeautifulSoup", icon: "/skills" },
-	{ name: "TailWindCSS", icon: "/skills" },
+	{ name: "React", icon: "../assets/icons/React-Light.svg" },
+	{ name: "Flask", icon: "../assets/icons/Flask-Light.svg" },
+	{ name: "Svelte", icon: "../assets/icons/Svelte.svg" },
+	{ name: "SQLite", icon: "../assets/icons/SQLite.svg" },
+	{ name: "BeautifulSoup", icon: "../assets/icons/Python-Light.svg" },
+	{ name: "TailWindCSS", icon: "../assets/icons/TailwindCSS-Light.svg" },
 ];
 
 const AIML = [
-	{ name: "Hugging Face", icon: "/skills" },
-	{ name: "Ollama", icon: "/skills" },
-	{ name: "Continue Coding Agent", icon: "/skills" },
+	{ name: "Hugging Face", icon: "../assets/icons/hf-logo.svg" },
+	{ name: "Ollama", icon: "../assets/icons/" },
+	{ name: "Continue Coding Agent", icon: "../assets/icons/" },
 ];
 
 const tools = [
-	{ name: "Docker", icon: "/skills" },
-	{ name: "Linux", icon: "/skills" },
-	{ name: "Ghidra", icon: "/skills" },
-	{ name: "Ida", icon: "/skills" },
-	{ name: "Git", icon: "/skills" },
+	{ name: "Docker", icon: "../assets/icons/Docker.svg" },
+	{ name: "Linux", icon: "../assets/icons/Linux-Light.svg" },
+	{ name: "Ghidra", icon: "../assets/icons/" },
+	{ name: "Ida", icon: "../assets/icons/IDAIcon.png" },
+	{ name: "Git", icon: "../assets/icons/Git.svg" },
+    { name: "GitHub Actions", icon:"../assets/icons/GithubActions-Light.svg"}
 ];
 
 const languages = [
-	{ name: "C", icon: "/skills" },
-	{ name: "C++", icon: "/skills" },
-	{ name: "Python", icon: "/skills" },
-	{ name: "SQL", icon: "/skills" },
-	{ name: "Java", icon: "/skills" },
-	{ name: "HTML5", icon: "/skills" },
-	{ name: "CSS", icon: "/skills" },
-	{ name: "JavaScript", icon: "/skills" },
-	{ name: "Lua", icon: "/skills" },
-	{ name: "Delphi", icon: "/skills" },
-	{ name: "GDScript", icon: "/skills" },
-	{ name: "Rust", icon: "/skills" },
+	{ name: "C", icon: "../assets/icons/C.svg" },
+	{ name: "C++", icon: "../assets/icons/CPP.svg" },
+	{ name: "Python", icon: "../assets/icons/Python-Light.svg" },
+	{ name: "SQL", icon: "../assets/icons/sql-database-generic-svgrepo-com.svg" },
+	{ name: "Java", icon: "../assets/icons/Java-Light.svg" },
+	{ name: "HTML5", icon: "../assets/icons/HTML.svg" },
+	{ name: "CSS", icon: "../assets/icons/CSS.svg" },
+	{ name: "JavaScript", icon: "../assets/icons/JavaScript.svg" },
+	{ name: "Lua", icon: "../assets/icons/Lua-Light.svg" },
+	{ name: "Delphi", icon: "../assets/icons/delphi-svgrepo-com.svg" },
+	{ name: "GDScript", icon: "../assets/icons/Godot-Light.svg" },
+	{ name: "Rust", icon: "../assets/icons/Rust.svg" },
 ];
 
 function Skills() {
