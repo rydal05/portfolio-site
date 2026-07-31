@@ -11,14 +11,14 @@ const frameworks = [
 
 const AIML = [
 	{ name: "Hugging Face", icon: "../assets/icons/hf-logo.svg" },
-	{ name: "Ollama", icon: "../assets/icons/" },
-	{ name: "Continue Coding Agent", icon: "../assets/icons/" },
+	{ name: "Ollama", icon: "../assets/icons/ollama.svg" },
+	{ name: "Continue Coding Agent", icon: "../assets/icons/continue.png" },
 ];
 
 const tools = [
 	{ name: "Docker", icon: "../assets/icons/Docker.svg" },
 	{ name: "Linux", icon: "../assets/icons/Linux-Light.svg" },
-	{ name: "Ghidra", icon: "../assets/icons/" },
+	{ name: "Ghidra", icon: "../assets/icons/Ghidra_logo.svg" },
 	{ name: "Ida", icon: "../assets/icons/IDAIcon.png" },
 	{ name: "Git", icon: "../assets/icons/Git.svg" },
     { name: "GitHub Actions", icon:"../assets/icons/GithubActions-Light.svg"}
@@ -42,6 +42,7 @@ const languages = [
 function Skills() {
 	return (
 		<>
+        <h1>Skills</h1>
 			<div>
 				<ListModal title="Frameworks & Libraries" text={frameworks} />
 			</div>
