@@ -7,11 +7,11 @@ function Portfolio() {
 			<h1>Portfolio</h1>
 			<p>
 				My completed and "proud" works are all listed publically on
-				GitHub page. However, you can find absolutley anything and
+				GitHub page. However, you can find absolutely anything and
 				everything I'm working on in my{" "}
 				<a
 					href="https://git.reddolphin.tech/"
-					class="hover:text-[#1d7cff] text-[#e94f37]"
+					className="hover:text-[#1d7cff] text-[#e94f37]"
 				>
 					Forgejo git instance
 				</a>
@@ -23,7 +23,7 @@ function Portfolio() {
 
 			<TextBlock
 				title="Previous Programming Work"
-				text="Below you'll find some modals which highlight detail and
+				text="Below you'll find some modals which highlight, detail, and
 				concisely put together projects I've worked on in the past. For
 				all intents and purposes, these are complete as they finish
 				out the goal they were initially intended to pursue, although I
@@ -33,8 +33,9 @@ function Portfolio() {
 			<ProjectModal
 				link="https://github.com/rydal05/SuruScraper"
 				title="SuruScraper"
-				image=""
+				image="/textures/starfield_bg.png"
 				text="Homelab hosted proprietary database & wishlist notification system for suruga-ya.com and suruga-ya.jp. Capable of shoving out 1200 stock checks an hour, and improving, SuruScraper turns a site that has no native wishlist notification service and gives you the edge on allowing you to own and control your own."
+				skills={['Python', 'Docker', 'BeautifulSoup4','Gunicorn','Flask', 'Vite','React']}
 			/>
 			<ProjectModal
 				link="https://github.com/rydal05/DX9FakePrimary"
