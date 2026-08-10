@@ -4,7 +4,7 @@
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
-  --border: #e5e4e7;
+  /* --border: #e5e4e7; */
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
@@ -37,7 +37,7 @@
     --text: #9ca3af;
     --text-h: #fff8f0;
     --bg: #1e1e24;
-    --border: #1e1e24;
+    /* --border: #1e1e24; */
     --link: #92140c;
 
   }
@@ -49,6 +49,7 @@
 
 body {
   margin: 0;
+  /* background-image: url('/textures/starfield_bg.png'); */
 }
 
 #root {
@@ -61,6 +62,7 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  
 }
 
 h1,
@@ -156,4 +158,21 @@ code {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.scrolling-bg {
+  position: fixed;
+  inset: 0;
+  background-image: url('/textures/waves.svg');
+  background-color: #299de8;
+  background-repeat: repeat;
+  background-size: 500px 500px; /* your tile's native size */
+  animation: scrollBg 5s ease-in-out infinite;
+  z-index: -999;
+
+}
+
+@keyframes scrollBg {
+  from { background-position: 0 0; }
+  to   { background-position: 0 -500px; } /* one full tile */
 }
