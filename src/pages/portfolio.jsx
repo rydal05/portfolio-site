@@ -7,11 +7,11 @@ function Portfolio() {
 			<h1>Portfolio</h1>
 			<p>
 				My completed and "proud" works are all listed publically on
-				GitHub page. However, you can find absolutley anything and
+				GitHub page. However, you can find absolutely anything and
 				everything I'm working on in my{" "}
 				<a
 					href="https://git.reddolphin.tech/"
-					class="hover:text-[#1d7cff] text-[#e94f37]"
+					className="hover:text-[#1d7cff] text-[#e94f37]"
 				>
 					Forgejo git instance
 				</a>
@@ -20,10 +20,13 @@ function Portfolio() {
 				being I wanted my own locally accessible Git server for when my
 				wifi goes offline or whenever GitHub goes down.
 			</p>
+			<br />
+			<hr />
+			<br />
 
 			<TextBlock
 				title="Previous Programming Work"
-				text="Below you'll find some modals which highlight detail and
+				text="Below you'll find some modals which highlight, detail, and
 				concisely put together projects I've worked on in the past. For
 				all intents and purposes, these are complete as they finish
 				out the goal they were initially intended to pursue, although I
@@ -33,8 +36,17 @@ function Portfolio() {
 			<ProjectModal
 				link="https://github.com/rydal05/SuruScraper"
 				title="SuruScraper"
-				image=""
+				image="/textures/starfield_bg.png"
 				text="Homelab hosted proprietary database & wishlist notification system for suruga-ya.com and suruga-ya.jp. Capable of shoving out 1200 stock checks an hour, and improving, SuruScraper turns a site that has no native wishlist notification service and gives you the edge on allowing you to own and control your own."
+				skills={[
+					"Python",
+					"Docker",
+					"BeautifulSoup4",
+					"Gunicorn",
+					"Flask",
+					"Vite",
+					"React",
+				]}
 			/>
 			<ProjectModal
 				link="https://github.com/rydal05/DX9FakePrimary"
@@ -42,6 +54,10 @@ function Portfolio() {
 				image=""
 				text="My first experiment with DLL injection, DX9FP is a drop-in DLL file that intercepts gpu level instructions to report whatever current monitor the window exists on as the primary one. Many old games utilize what the Window's OS checks off as the main screen to display its window (most usually in full screen), however, this is an archaic design that ignores how modern day users often have multiple monitors, often proprietary CRT monitors, as their choice of screen. This intends to fix that."
 			/>
+
+			<br />
+			<hr />
+			<br />
 
 			<TextBlock
 				title="Current Projects"
@@ -69,6 +85,10 @@ function Portfolio() {
 				text="A 2D Shoot-Em-Up game engine & game created entirely within C/C++ with the use of the Simple DirectMedia Layer 3 library. Purpose built to be compiled to and played perfectly on consoles as old as the PlayStation 1."
 			/>
 
+			<br />
+			<hr />
+			<br />
+
 			<TextBlock
 				title="Hackathons"
 				text="Here you'll see some projects I collaborated with others on for
@@ -90,7 +110,10 @@ function Portfolio() {
 			"
 			/>
 
-			
+			<br />
+			<hr />
+			<br />
+
 			<TextBlock
 				title="Homelabbing & Self Hosted"
 				text="As stated earlier, I mostly host and utilize my own
