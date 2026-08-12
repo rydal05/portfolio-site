@@ -1,5 +1,5 @@
 import SquareProjectModal from "../components/SquareProjectModal";
-// import TallProjectModal from "../components/TallProjectModal";
+import TallProjectModal from "../components/TallProjectModal";
 import TextBlock from "../components/TextBlock";
 
 function Portfolio() {
@@ -117,14 +117,14 @@ function Portfolio() {
 			<br />
 
 			<TextBlock title="Homelabbing & Self Hosted">
-				text="As stated earlier, I mostly host and utilize my own
+				As stated earlier, I mostly host and utilize my own
 				pseudo-private Git instance which I service through the web
 				using Cloudflare, Coolify, Forgejo, and an old computer my
 				youngest brother had lying around. On this homelab, I run about
 				10 services concurrently including but not limited to: music &
 				podcast streaming, PDF/book hosting, PDF manipulation,
 				SuruScraper, jellyfin, some media tracker aggregators, and my
-				very own VPN."
+				very own VPN.
 			</TextBlock>
 		</>
 	);
