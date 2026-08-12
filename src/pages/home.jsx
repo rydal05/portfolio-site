@@ -8,33 +8,69 @@ function Home() {
 		<>
 			{/* top */}
 
-			<h2>Game, Fullstack, and Data Developer.</h2>
-			<h1>Hi, I'm Ryan! 👋🏽</h1>
-			<h2>
-				<CycleText />
-			</h2>
-			<h3>Orlando, FL</h3>
+			<div className="flex-row text-left">
+				<h2 >Game, Fullstack, and Data Developer.</h2>
+				<h1 >Hi, I'm Ryan! 👋🏽</h1>
+				<h2 >
+					<CycleText />
+				</h2>
+				<h3 className="">Orlando, FL</h3>
 
-			<div>
-				<p>View Resume</p>
-				<p>github</p>
-				<p>linkedin</p>
-				<p>facebook</p>
-				<p>instagram</p>
+				<div className="flex gap-4">
+					<p>View Resume</p>
+					<p>github</p>
+					<p>linkedin</p>
+					<p>facebook</p>
+					<p>instagram</p>
+				</div>
 			</div>
 
-			<div>
+			<div className="flex gap-8 justify-evenly">
+								{/*autoupdate to have actual age here*/}
 				<p>age</p>
+				{/* include time from roblox here */}
 				<p>YOE</p>
-				<p>project count</p>
+
 				{/* pull from github */}
-				<p>git commits</p>
+				<p>project count</p>
 				{/* pull info from github */}
+				<p>git commits</p>
 				{/* link to more indepth on me */}
 			</div>
 
 			{/* education */}
-			<div></div>
+			<div>
+				<div>
+					Palm Beach Central High School
+					High School Diploma
+					2019-2023
+				</div>
+
+				<div>
+					Obtained AICE Diploma and got Florida Bright Futures Scholarship
+					Moved to Orlando and started at Valencia College
+				</div>
+
+				{/* each hover expands to show a timeline with summaries of what happened during that year (accomplishments, goals set, etc) */}
+
+				<div>
+					Valencia College
+					Associates Degree: Articulated Computer Science Degree
+					2023-2025
+				</div>
+
+
+				<div>
+					University of Central Florida
+					Bachelor's Degree: Major computer science Minor computer engineering or something
+					2025-2028
+				</div>
+				<div>
+					University of Central Florida
+					Would love to obtain a masters or even a PHD.
+					2028-Onward
+				</div>
+			</div>
 
 			<div>{/* some boxes with little tidbits of information */}</div>
 
