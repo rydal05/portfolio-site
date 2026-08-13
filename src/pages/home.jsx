@@ -8,71 +8,91 @@ function Home() {
 		<>
 			{/* top */}
 
-			<div className="flex-row text-left">
-				<h2 >Game, Fullstack, and Data Developer.</h2>
-				<h1 >Hi, I'm Ryan! 👋🏽</h1>
-				<h2 >
-					<CycleText />
-				</h2>
-				<h3 className="">Orlando, FL</h3>
+			<div>
+				<div className="flex-row text-left">
+					<h2>Game, Fullstack, and Data Developer.</h2>
+					<h1>Hi, I'm Ryan! 👋🏽</h1>
+					<h2>
+						<CycleText />
+					</h2>
+					<h3 className="m-4">Orlando, FL</h3>
 
-				<div className="flex gap-4">
-					<p>View Resume</p>
-					<p>github</p>
-					<p>linkedin</p>
-					<p>facebook</p>
-					<p>instagram</p>
+					<div className="flex gap-8">
+						<button className="border rounded-4xl border-[#e94f37] w-20 h-10">
+							<span className="text-[#e94f37]">View CV</span>
+						</button>
+						<span>github</span>
+						<span>linkedin</span>
+						<span>facebook</span>
+						<span>instagram</span>
+					</div>
 				</div>
 			</div>
 
-			<div className="flex gap-8 justify-evenly">
-								{/*autoupdate to have actual age here*/}
-				<p>age</p>
-				{/* include time from roblox here */}
-				<p>YOE</p>
+			<div className="flex justify-between my-20">
+				<span className="text-5xl flex">
+					21
+					<span className="text-sm text-left self-center mx-4">
+						years
+						<br />
+						old
+					</span>
+				</span>
+				{/* <span className="text-5xl flex">
+					0
+					<span className="text-sm text-left self-center">years<br/>of expeirence</span>
+				</span> */}
 
-				{/* pull from github */}
-				<p>project count</p>
-				{/* pull info from github */}
-				<p>git commits</p>
-				{/* link to more indepth on me */}
+				<span className="text-5xl flex">
+					25+
+					<span className="text-sm text-left self-center mx-4">
+						projects
+					</span>
+				</span>
+				<span className="text-5xl flex text-left">
+					424
+					<span className="text-sm text-left self-center mx-4">
+						commits
+						<br /> in the past year
+					</span>
+				</span>
 			</div>
 
 			{/* education */}
-			<div>
-				<div>
-					Palm Beach Central High School
-					High School Diploma
-					2019-2023
-				</div>
+			<div className="flex justify-between">
+				<TextBlock
+					title="Palm Beach Central High School"
+					degree="High School Diploma"
+					years="2019-2023"
+				>
+					Obtained AICE Diploma and got Florida Bright Futures
+					Scholarship Moved to Orlando and started at Valencia College
+				</TextBlock>
 
-				<div>
-					Obtained AICE Diploma and got Florida Bright Futures Scholarship
-					Moved to Orlando and started at Valencia College
-				</div>
+				<TextBlock
+					title="Valencia College"
+					degree="Associates Degree: Articulated Computer
+					Science Degree"
+					years="2023-2025"
+				>
+					Hello my name is ander minugs
+				</TextBlock>
 
-				{/* each hover expands to show a timeline with summaries of what happened during that year (accomplishments, goals set, etc) */}
+				<TextBlock
+					title="University of Central Florida"
+					degree="Bachelor's Degree: Computer Science"
+				>
+					hello my name is andergingus
+				</TextBlock>
 
-				<div>
-					Valencia College
-					Associates Degree: Articulated Computer Science Degree
-					2023-2025
-				</div>
-
-
-				<div>
-					University of Central Florida
-					Bachelor's Degree: Major computer science Minor computer engineering or something
-					2025-2028
-				</div>
-				<div>
-					University of Central Florida
-					Would love to obtain a masters or even a PHD.
-					2028-Onward
-				</div>
+				<TextBlock
+					title="The Future..."
+					degree="Masters, PHD"
+					years="2028-onward"
+				>
+					hello my name is anderslingus
+				</TextBlock>
 			</div>
-
-			<div>{/* some boxes with little tidbits of information */}</div>
 
 			{/* portfolio */}
 
