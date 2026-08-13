@@ -8,7 +8,7 @@ function Home() {
 		<>
 			{/* top */}
 
-			<div>
+			<div className="flex justify-between">
 				<div className="flex-row text-left">
 					<h2>Game, Fullstack, and Data Developer.</h2>
 					<h1>Hi, I'm Ryan! 👋🏽</h1>
@@ -27,6 +27,8 @@ function Home() {
 						<span>instagram</span>
 					</div>
 				</div>
+
+				<img src="/REDPANDA.jpg" className="h-60 object-contain " />
 			</div>
 
 			<div className="flex justify-between my-20">
