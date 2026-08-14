@@ -6,7 +6,7 @@ import SquareProjectModal from "../components/SquareProjectModal";
 function Home() {
 	return (
 		<>
-			<h1>A pleasure to meet your acquiantance.</h1>
+			<h1 className="m">A pleasure to meet your acquiantance.</h1>
 
 			<hr className="m-20"/>
 
