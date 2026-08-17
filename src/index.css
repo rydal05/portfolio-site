@@ -67,8 +67,8 @@ body {
 
 h1,
 h2 {
-  font-family: var(--heading);
-  font-weight: 500;
+  /* font-family: var(--heading); */
+  /* font-weight: 500; */
   color: var(--text-h);
 }
 
@@ -144,7 +144,6 @@ code {
   float: left;
 }
 
-.header {}
 
 .footer {
   padding: 20px;
@@ -179,7 +178,12 @@ code {
 
 @font-face{
   font-family: 'Helvetica';
-  src: url('./assets/fonts/helvetica-light.ttf') format('ttf');
+  src: url('./assets/fonts/TimesNewRoman.ttf') format('ttf');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-helvetica: 'Helvetica', sans-serif;
 }
