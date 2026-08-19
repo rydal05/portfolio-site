@@ -13,8 +13,8 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
@@ -39,7 +39,6 @@
     --bg: #212121;
     /* --border: #1e1e24; */
     --link: #92140c;
-
   }
 
   #social .button-icon {
@@ -62,7 +61,6 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  
 }
 
 h1,
@@ -113,7 +111,6 @@ code {
   background: var(--code-bg);
 }
 
-
 .paragraph {
   border-radius: 50%;
 }
@@ -137,13 +134,11 @@ code {
 
 .navbar button:hover {
   color: hsl(0, 0%, 55%);
-
 }
 
 .navbar button {
   float: left;
 }
-
 
 .footer {
   padding: 20px;
@@ -162,28 +157,44 @@ code {
 .scrolling-bg {
   position: fixed;
   inset: 0;
-  background-image: url('/textures/waves.svg');
+  background-image: url("/textures/waves.svg");
   background-color: #299de8;
   background-repeat: repeat;
-  background-size: 500px 500px; /* your tile's native size */
+  background-size: 500px 500px;
+  /* your tile's native size */
   animation: scrollBg 5s ease-in-out infinite;
   z-index: -999;
-
 }
 
 @keyframes scrollBg {
-  from { background-position: 0 0; }
-  to   { background-position: 0 -500px; } /* one full tile */
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 0 -500px;
+  }
+
+  /* one full tile */
 }
 
-@font-face{
-  font-family: 'Helvetica';
-  src: url('./assets/fonts/TimesNewRoman.ttf') format('ttf');
+@font-face {
+  font-family: "Helvetica";
+  src: url("./assets/fonts/TimesNewRoman.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @theme {
-  --font-helvetica: 'Helvetica', sans-serif;
+  --font-helvetica: "Helvetica", sans-serif;
+}
+
+.expandable {
+  cursor: 'pointer';
+  transition: transform .15s ease-in-out;
+}
+
+.expandable:hover {
+  transform: scale(1.3);
 }
