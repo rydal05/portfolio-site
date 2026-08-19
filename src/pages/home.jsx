@@ -80,7 +80,7 @@ function Home() {
 						<h2>
 							<CycleText />
 						</h2>
-						<h3 className="m-4">Orlando, FL</h3>
+						<h3 className="my-4 text-xl">Orlando, FL</h3>
 
 						<div className="flex gap-8">
 							<form
@@ -181,9 +181,11 @@ function Home() {
 					</span>
 				</div>
 			</section>
+			<pre>
 			Alas, <i>Ryan</i> is going . . . Undesired, unwanted them, What
 			makes them go? It is nothing else than the principle of the man who
-			has the reason for being."
+			has the reason for being.
+			</pre>
 			<hr className="m-20" />
 			<section id="education" className="scroll-mt-24">
 				<h1>Education History</h1>
