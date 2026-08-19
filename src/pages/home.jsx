@@ -60,6 +60,7 @@ const languages = [
 function Home() {
 	return (
 		<>
+			<section id="home" className="scroll-mt-24">
 			<h1 className="font-helvetica">
 				A pleasure to meet your acquiantance.
 			</h1>
@@ -70,7 +71,6 @@ function Home() {
 			望まれることなく、浮き世から捨てられし彼等を動かすもの。
 			それは、生きる意志を持つ者の意地に他ならない。
 			<hr className="m-20" />
-			<section id="home">
 				<div className="flex justify-between">
 					<div className="flex-row text-left">
 						<h2 className="font-helvetica">
@@ -185,7 +185,7 @@ function Home() {
 			makes them go? It is nothing else than the principle of the man who
 			has the reason for being."
 			<hr className="m-20" />
-			<section id="education">
+			<section id="education" className="scroll-mt-24">
 				<h1>Education History</h1>
 				<div className="flex justify-between">
 					<TextBlock
@@ -263,7 +263,7 @@ function Home() {
 				dreams.
 			</section>
 			<hr className="m-20" />
-			<section id="portfolio">
+			<section id="portfolio" className="scroll-mt-24">
 				<h1>Portfolio lightning round</h1>
 				<div className="flex">
 					<div>
@@ -356,7 +356,7 @@ function Home() {
 			</section>
 			Respect, Honesty, Courage, Rectitude, Loyalty, Honour, Benevolence
 			<hr className="m-20" />
-			<section id="skills">
+			<section id="skills" className="scroll-mt-24">
 				<h1>Some of my skillset</h1>
 				<div className="flex justify-center gap-20">
 					<ListModal
@@ -375,7 +375,7 @@ function Home() {
 			What everyone wants is but a helping hand. Just enough to save them
 			from the abyss.
 			<hr className="m-20" />
-			<section id="contact">
+			<section id="contact" className="scroll-mt-24">
 				<h1>Extend a hand</h1>
 				<hr />
 				<h1>Come learn about me more personally</h1>
