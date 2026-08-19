@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useRef } from "react";
 
 //TODO: update this to dynamically pull from pages in the pages subdirectory or reference a centralized dictionary for easier less confusing accesses
 
@@ -11,6 +12,17 @@ const navigation = [
 ];
 
 export function Header() {
+	const targetRef = useRef(null);
+	const handleScroll = () => {
+		targetRef.current?.scrollIntoView({ behavior: "smooth" });
+	};
+
+	const iconModules = import.meta.glob("../assets/*.{svg,png}", {
+		eager: true,
+		import: "default",
+	});
+
+
 	return (
 		<>
 			<header className="sticky top-5 items-center justify-between pointer-events-auto z-50 rounded-full border border-white/24 bg-white/[0.08] transition-all duration-300 hover:bg-white/[0.12] focus-within:bg-white/[0.12] md:block backdrop-blur-[2px] md:focus-within:backdrop-blur-[2px] m-4">
