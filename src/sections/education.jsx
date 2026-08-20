@@ -12,7 +12,7 @@ function Education() {
 					years="2019-2023"
 				>
 					<ul>
-						<li className="font-helvetica">
+						<li className="font-timesnewroman">
 							Obtained AICE Diploma and got the Florida Bright
 							Futures Scholarship.
 						</li>

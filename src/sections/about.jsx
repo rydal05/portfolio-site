@@ -7,17 +7,11 @@ function About() {
 	return (
 		<>
 			<section id="home" className="scroll-mt-24">
-				<h1 className="font-helvetica">Pleased to make your acquaintance.</h1>
-				I will not die until I achieve something. Even though the ideal
-				is high, I never give in. Therefore, I never die with regrets.
-				<br />
-				嗚呼、斑鳩が行く・・・・・・
-				望まれることなく、浮き世から捨てられし彼等を動かすもの。
-				それは、生きる意志を持つ者の意地に他ならない。
+				<h1 className="font-timesnewroman">Pleased to make your acquaintance.</h1>
 				<hr className="m-20" />
 				<div className="flex justify-between">
 					<div className="flex-row text-left">
-						<h2 className="font-helvetica">
+						<h2 className="font-timesnewroman">
 							Game, Fullstack, and Data Developer.
 						</h2>
 						<h1>Hi, I'm Ryan! 👋🏽</h1>
@@ -101,14 +95,14 @@ function About() {
 							old
 						</span>
 					</span>
-					<span className="text-5xl flex">
+					{/* <span className="text-5xl flex">
 						0
 						<span className="text-sm text-left self-center mx-4">
 							years
 							<br />
 							of experience
 						</span>
-					</span>
+					</span> */}
 
 					<span className="text-5xl flex">
 						25+
