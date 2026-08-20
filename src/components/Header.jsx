@@ -17,7 +17,7 @@ export function Header() {
 		targetRef.current?.scrollIntoView({ behavior: "smooth" });
 	};
 
-	const iconModules = import.meta.glob("../assets/*.{svg,png}", {
+	const iconModules = import.meta.glob("../assets/skill_icons/*.{svg,png}", {
 		eager: true,
 		import: "default",
 	});

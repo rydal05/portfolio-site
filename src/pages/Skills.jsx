@@ -1,14 +1,14 @@
 import ListModal from "../components/ListModal";
 
 // Eagerly import every icon in the assets folder as a URL string
-const iconModules = import.meta.glob("../assets/*.{svg,png}", {
+const iconModules = import.meta.glob("../assets/skill_icons/*.{svg,png}", {
     eager: true,
     import: "default",
 });
 
 // Helper to grab the resolved URL by original filename
 const icon = (filename) => {
-    const match = iconModules[`../assets/${filename}`];
+    const match = iconModules[`../assets/skill_icons/${filename}`];
     if (!match) console.warn(`Missing icon: ${filename}`);
     return match;
 };

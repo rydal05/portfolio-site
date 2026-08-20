@@ -6,14 +6,15 @@ import TallProjectModal from "../components/TallProjectModal";
 import SquareProjectModal from "../components/SquareProjectModal";
 import ListModal from "../components/ListModal";
 
-const iconModules = import.meta.glob("../assets/*.{svg,png}", {
+import heroImage from '../assets/REDPANDA.jpg';
+
+const iconModules = import.meta.glob("../assets/skill_icons/*.{svg,png}", {
 	eager: true,
 	import: "default",
 });
 
-// Helper to grab the resolved URL by original filename
 const icon = (filename) => {
-	const match = iconModules[`../assets/${filename}`];
+	const match = iconModules[`../assets/skill_icons/${filename}`];
 	if (!match) console.warn(`Missing icon: ${filename}`);
 	return match;
 };
@@ -84,7 +85,7 @@ function Home() {
 
 						<div className="flex gap-8">
 							<form
-								action="https://reddolphin.tech/files/Ryan_Dalton_Resume.pdf"
+								action="/files/Ryan_Dalton_Resume.pdf"
 								method="get"
 							>
 								<button className="border rounded-4xl border-[#e94f37] w-20 h-10 expandable cursor-pointer">
@@ -146,7 +147,7 @@ function Home() {
 						</div>
 					</div>
 
-					<img src="/REDPANDA.jpg" className="h-60 object-contain " />
+					<img src={heroImage} className="h-60 object-contain " />
 				</div>
 				<div className="flex justify-between my-20">
 					<span className="text-5xl flex">
