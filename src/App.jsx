@@ -1,19 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/home";
-import About from "./pages/about";
-import Portfolio from "./pages/portfolio";
-import Contact from "./pages/contact";
+import About from "./sections/about";
+import Portfolio from "./sections/portfolio";
+import Contact from "./sections/contact";
 import Layout from "./Layout";
-import Skills from "./pages/Skills";
+import Skills from "./sections/skills";
 
 //TODO: update this to dynamically pull from pages in the pages subdirectory or reference a centralized dictionary for easier less confusing accesses
 const navigation = [
-	{ name: "Home", href: "", element: Home },
-	{ name: "About", href: "/about", element: About },
-	{ name: "Portfolio", href: "/portfolio", element: Portfolio },
-	{ name: "Skills", href: "/skills", element: Skills },
-	{ name: "Contact", href: "/contact", element: Contact },
+	{ name: "Professional", href: "", element: Home },
+	{ name: "Personal", href: "", element: Home },
 ];
 
 function App() {
