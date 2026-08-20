@@ -60,7 +60,7 @@ function Portfolio() {
 							title="CourseKnight"
 							image=""
 						>
-							A Discord Guild bot that automatically fecthes
+							A Discord Guild bot that automatically fetches
 							canvas webcourse updates. New grades, assignments,
 							and teacher announcements, all with the help of
 							Google Gemini to provide summaries and encouraging
