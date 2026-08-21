@@ -3,7 +3,7 @@ export default function ListModal({ title, text }) {
 		<>
 			<div className="">
 				<h2>{title}</h2>
-				<div className="">
+				<div className="gap-4 pr-4 overflow-y-auto max-h-[20vw]">
 					{text.map((item) => (
 						<div
 							key={item.name}
