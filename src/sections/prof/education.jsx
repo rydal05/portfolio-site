@@ -1,4 +1,4 @@
-import TextBlock from "../components/TextBlock";
+import TextBlock from "@/components/TextBlock";
 
 
 function Education() {
