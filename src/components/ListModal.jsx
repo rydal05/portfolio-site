@@ -1,4 +1,4 @@
-function ListModal({ title, text }) {
+export default function ListModal({ title, text }) {
 	return (
 		<>
 			<div className="">
@@ -22,5 +22,3 @@ function ListModal({ title, text }) {
 		</>
 	);
 }
-
-export default ListModal;

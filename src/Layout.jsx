@@ -4,7 +4,7 @@ import ScrollingBackground from "/src/components/ScrollingBackground";
 
 import { Outlet } from "react-router-dom";
 
-function Layout() {
+export default function Layout() {
 	return (
 		<>
 			<div className="flex flex-col min-h-screen">
@@ -17,5 +17,3 @@ function Layout() {
 		</>
 	);
 }
-
-export default Layout;

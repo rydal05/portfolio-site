@@ -11,7 +11,7 @@ const navigation = [
 	{ name: "Contact", href: "/#contact" },
 ];
 
-export function Header() {
+export default function Header() {
 
 
 	return (
@@ -37,5 +37,3 @@ export function Header() {
 		</>
 	);
 }
-
-export default Header;

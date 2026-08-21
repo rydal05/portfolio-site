@@ -1,4 +1,4 @@
-function Personal() {
+export default function Personal() {
 	return (
 		<>
 			<section id="personal">
@@ -7,5 +7,3 @@ function Personal() {
 		</>
 	);
 }
-
-export default Personal;

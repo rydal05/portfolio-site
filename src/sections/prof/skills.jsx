@@ -50,7 +50,7 @@ const languages = [
 	{ name: "Rust", icon: icon("Rust.svg") },
 ];
 
-function Skills() {
+export default function Skills() {
 	return (
 		<>
 			<section id="skills" className="scroll-mt-24">
@@ -71,5 +71,3 @@ function Skills() {
 		</>
 	);
 }
-
-export default Skills;

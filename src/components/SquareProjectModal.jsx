@@ -1,6 +1,6 @@
 import bubble from "/src/components/bubble";
 
-function SquareProjectModal({ link, title, image, skills, children}) {
+export default function SquareProjectModal({ link, title, image, skills, children}) {
 	return (
 		<>
 			<div className="flex-1 max-w-2xl max-h-2xl flex-col p-10 gap-5 bg-[#212121] hover:bg-[#303030]">
@@ -21,5 +21,3 @@ function SquareProjectModal({ link, title, image, skills, children}) {
 		</>
 	);
 }
-
-export default SquareProjectModal;

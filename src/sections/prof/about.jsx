@@ -3,7 +3,7 @@ import CycleText from "/src/components/CycleText";
 import heroImage from '/src/assets/REDPANDA.jpg';
 
 
-function About() {
+export default function About() {
 	return (
 		<>
 			<section id="home" className="scroll-mt-24">
@@ -122,5 +122,3 @@ function About() {
 		</>
 	);
 }
-
-export default About;

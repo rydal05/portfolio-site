@@ -1,4 +1,4 @@
-function Contact() {
+export default function Contact() {
 	return (
 		<>
 			<section id="contact" className="scroll-mt-24">
@@ -35,4 +35,3 @@ function Contact() {
 	);
 }
 
-export default Contact;

@@ -1,7 +1,7 @@
 import TextBlock from "/src/components/TextBlock";
 
 
-function Education() {
+export default function Education() {
 	return (
 		<section id="education" className="scroll-mt-24">
 			<h1>Education History</h1>
@@ -76,5 +76,3 @@ function Education() {
 		</section>
 	);
 }
-
-export default Education;

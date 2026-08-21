@@ -1,4 +1,4 @@
-function Footer() {
+export default function Footer() {
 	return (
 		<>
 			<footer className="footer flex justify-between">
@@ -17,5 +17,3 @@ function Footer() {
 		</>
 	);
 }
-
-export default Footer;

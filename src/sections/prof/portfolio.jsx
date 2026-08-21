@@ -2,7 +2,7 @@ import SquareProjectModal from "/src/components/SquareProjectModal";
 import TallProjectModal from "/src/components/TallProjectModal";
 import TextBlock from "/src/components/TextBlock";
 
-function Portfolio() {
+export default function Portfolio() {
 	return (
 		<>
 			<section id="portfolio" className="scroll-mt-24">
@@ -99,5 +99,3 @@ function Portfolio() {
 		</>
 	);
 }
-
-export default Portfolio;

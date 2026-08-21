@@ -8,7 +8,7 @@ const words = [
 	"Bassist",
 	"Polyglot",
 ];
-export function CycleText() {
+export default function CycleText() {
 	const [index, setIndex] = useState(0);
 
 	useEffect(() => {
@@ -35,5 +35,3 @@ export function CycleText() {
 		</span>
 	);
 }
-
-export default CycleText;

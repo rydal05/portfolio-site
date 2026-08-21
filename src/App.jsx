@@ -13,7 +13,7 @@ const navigation = [
 	{ name: "Personal", href: "", element: Home },
 ];
 
-function App() {
+export default function App() {
 	return (
 		<>
 			<Router>
@@ -36,4 +36,4 @@ function App() {
 	);
 }
 
-export default App;
+
