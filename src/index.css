@@ -184,37 +184,6 @@ code {
 
   /* one full tile */
 }
-
-@font-face {
-  font-family: "TimesNewRoman";
-  src: url("./assets/fonts/TimesNewRoman.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Helvetica";
-  src: url("./assets/fonts/Helvetica.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Cheltenham";
-  src: url("./assets/fonts/Cheltenham\ BoldItalic.ttf") format("truetype");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-
-@theme {
-  --font-timesnewroman: "TimesNewRoman", serif;
-  --font-helvetica: "Helvetica", sans-serif;
-  --font-cheltenham: "Cheltenham", serif;
-}
-
 .expandable {
   cursor: 'pointer';
   transition: transform .15s ease-in-out;
@@ -231,10 +200,95 @@ hr {
   margin: 8px 0px 8px 0px;
 }
 
-li a{
+li a {
   color: #e94f37;
 }
 
-li a:hover{
+li a:hover {
   color: #1d7cff;
+}
+
+/* Marquee — four stacked strips */
+.marquee-block.marquee-section {
+  transform: skewY(-1deg);
+  margin: 40px 0;
+  overflow: hidden;
+  border-bottom: var(--border);
+  background: var(--bg);
+}
+
+.marquee-track {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0;
+  width: max-content;
+  max-width: none;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.marquee-track__text {
+  flex-shrink: 0;
+  display: block;
+  white-space: nowrap;
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  opacity: 1;
+}
+
+/* Strip 1 — primary blue */
+.marquee-strip--1 {
+  background: #d14934;
+  padding: 10px 0;
+}
+
+.marquee-strip--1 .marquee-track__text {
+  font-weight: 600;
+  font-size: 18px;
+  color: #060b18;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+}
+
+.marquee-track--s1 {
+  animation: scrollLeft 15s linear infinite;
+}
+
+/* Strip 2 — dark,
+outlined text */
+.marquee-strip--2 {
+  background: #060b18;
+  padding: 10px 0;
+  color: #ffffff;
+}
+
+.marquee-track--s2 {
+  animation: scrollRight 18s linear infinite;
+}
+
+.marquee-section:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
