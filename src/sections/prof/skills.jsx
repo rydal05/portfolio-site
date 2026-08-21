@@ -6,7 +6,7 @@ const iconModules = import.meta.glob("@/assets/skill_icons/*.{svg,png}", {
 });
 
 const icon = (filename) => {
-	const match = iconModules[`@/assets/skill_icons/${filename}`];
+	const match = iconModules[`/src/assets/skill_icons/${filename}`];
 	if (!match) console.warn(`Missing icon: ${filename}`);
 	return match;
 };
