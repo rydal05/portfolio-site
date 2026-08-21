@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/home";
-import About from "./sections/about";
-import Portfolio from "./sections/portfolio";
-import Contact from "./sections/contact";
-import Layout from "./Layout";
-import Skills from "./sections/skills";
+import Home from "@/pages/home";
+import About from "@/sections/prof/about";
+import Portfolio from "@/sections/prof/portfolio";
+import Contact from "@/sections/prof/contact";
+import Layout from "@/Layout";
+import Skills from "@/sections/prof/skills";
 
 //TODO: update this to dynamically pull from pages in the pages subdirectory or reference a centralized dictionary for easier less confusing accesses
 const navigation = [
