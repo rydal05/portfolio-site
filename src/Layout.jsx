@@ -1,6 +1,6 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import ScrollingBackground from "@/components/ScrollingBackground";
+import Header from "/src/components/Header";
+import Footer from "/src/components/Footer";
+import ScrollingBackground from "/src/components/ScrollingBackground";
 
 import { Outlet } from "react-router-dom";
 

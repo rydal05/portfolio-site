@@ -1,15 +1,15 @@
 import React from "react";
 
-import TallProjectModal from "@/components/TallProjectModal";
-import SquareProjectModal from "@/components/SquareProjectModal";
-import ListModal from "@/components/ListModal";
+import TallProjectModal from "/src/components/TallProjectModal";
+import SquareProjectModal from "/src/components/SquareProjectModal";
+import ListModal from "/src/components/ListModal";
 
-import About from "@/sections/prof/about";
-import Education from "@/sections/prof/education";
-import Portfolio from "@/sections/prof/portfolio";
-import Skills from "@/sections/prof/skills";
-import Contact from "@/sections/prof/contact";
-import Deployed from "@/sections/prof/deployed";
+import About from "/src/sections/prof/about";
+import Education from "/src/sections/prof/education";
+import Portfolio from "/src/sections/prof/portfolio";
+import Skills from "/src/sections/prof/skills";
+import Contact from "/src/sections/prof/contact";
+import Deployed from "/src/sections/prof/deployed";
 
 function Home() {
 	return (

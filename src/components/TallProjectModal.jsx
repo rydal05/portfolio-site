@@ -1,4 +1,4 @@
-import bubble from "@/components/bubble";
+import bubble from "/src/components/bubble";
 
 function TallProjectModal({ link, title, image, skills, children}) {
 	return (

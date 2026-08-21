@@ -1,6 +1,6 @@
-import TextBlock from "@/components/TextBlock";
-import CycleText from "@/components/CycleText";
-import heroImage from '@/assets/REDPANDA.jpg';
+import TextBlock from "/src/components/TextBlock";
+import CycleText from "/src/components/CycleText";
+import heroImage from '/src/assets/REDPANDA.jpg';
 
 
 function About() {

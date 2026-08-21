@@ -1,6 +1,6 @@
-import ListModal from "@/components/ListModal";
+import ListModal from "/src/components/ListModal";
 
-const iconModules = import.meta.glob("@/assets/skill_icons/*.{svg,png}", {
+const iconModules = import.meta.glob("/src/assets/skill_icons/*.{svg,png}", {
 	eager: true,
 	import: "default",
 });

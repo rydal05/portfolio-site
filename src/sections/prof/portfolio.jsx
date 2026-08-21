@@ -1,6 +1,6 @@
-import SquareProjectModal from "@/components/SquareProjectModal";
-import TallProjectModal from "@/components/TallProjectModal";
-import TextBlock from "@/components/TextBlock";
+import SquareProjectModal from "/src/components/SquareProjectModal";
+import TallProjectModal from "/src/components/TallProjectModal";
+import TextBlock from "/src/components/TextBlock";
 
 function Portfolio() {
 	return (
