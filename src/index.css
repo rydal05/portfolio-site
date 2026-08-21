@@ -1,9 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
+  --text: #9ca3af;
+  --text-h: #fff8f0;
+  --bg: #212121;
+  /* --border: #1e1e24; */
+  --link: #92140c;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
@@ -231,10 +233,10 @@ hr {
   margin: 8px 0px 8px 0px;
 }
 
-li a{
+li a {
   color: #e94f37;
 }
 
-li a:hover{
+li a:hover {
   color: #1d7cff;
 }
