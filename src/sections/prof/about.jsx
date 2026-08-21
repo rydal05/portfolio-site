@@ -7,8 +7,8 @@ export default function About() {
 	return (
 		<>
 			<section id="home" className="scroll-mt-24">
-				<h1 className="font-timesnewroman">Pleased to make your acquaintance.</h1>
 				<hr className="m-20" />
+				<h1 className="font-timesnewroman">Pleased to make your acquaintance.</h1>
 				<div className="flex justify-between">
 					<div className="flex-row text-left">
 						<h2 className="font-timesnewroman">
