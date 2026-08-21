@@ -1,14 +1,15 @@
 import React from "react";
 
-import TallProjectModal from "../components/TallProjectModal";
-import SquareProjectModal from "../components/SquareProjectModal";
-import ListModal from "../components/ListModal";
+import TallProjectModal from "@/components/TallProjectModal";
+import SquareProjectModal from "@/components/SquareProjectModal";
+import ListModal from "@/components/ListModal";
 
-import About from "../sections/about";
-import Education from "../sections/education";
-import Portfolio from "../sections/portfolio";
-import Skills from "../sections/skills";
-import Contact from "../sections/contact";
+import About from "@/sections/prof/about";
+import Education from "@/sections/prof/education";
+import Portfolio from "@/sections/prof/portfolio";
+import Skills from "@/sections/prof/skills";
+import Contact from "@/sections/prof/contact";
+import Deployed from "@/sections/prof/deployed";
 
 function Home() {
 	return (
@@ -58,6 +59,7 @@ function Home() {
 			</h4>
 			<hr className="m-20" />
 
+			<Deployed />
 			<h4>hello</h4>
 			<hr className="m-20" />
 		</>

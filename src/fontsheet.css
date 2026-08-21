@@ -1,6 +1,6 @@
 @font-face {
   font-family: "TimesNewRoman";
-  src: url("./assets/fonts/TimesNewRoman.ttf") format("truetype");
+  src: url("@/assets/fonts/TimesNewRoman.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Helvetica";
-  src: url("./assets/fonts/Helvetica.ttf") format("truetype");
+  src: url("@/assets/fonts/Helvetica.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Cheltenham";
-  src: url("./assets/fonts/Cheltenham\ BoldItalic.ttf") format("truetype");
+  src: url("@/assets/fonts/Cheltenham\ BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
