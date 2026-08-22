@@ -6,12 +6,12 @@ export default function Portfolio() {
 	return (
 		<>
 			<section id="portfolio" className="scroll-mt-24">
-				<h1>Portfolio lightning round</h1>
+				<h1>Collected Portfolio Works</h1>
 				<div className="flex">
 					<div>
 						<TallProjectModal
 							link="https://github.com/rydal05/SuruScraper"
-							title="SuruScraper"
+							title="SuruScraper 駿—自動収集"
 							image="/textures/starfield_bg.png"
 							skills={[
 								"Python",
