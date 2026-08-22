@@ -1,7 +1,7 @@
 export default function Contact() {
 	return (
 		<>
-			<section id="contact" className="scroll-mt-24 flex justify-between">
+			<section id="contact" className="scroll-mt-30 flex justify-between">
 				<div>
 					<h1>Extend a hand</h1>
 					<ul className="text-3xl">

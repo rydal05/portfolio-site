@@ -5,8 +5,8 @@ import TextBlock from "/src/components/TextBlock";
 export default function Portfolio() {
 	return (
 		<>
-			<section id="portfolio" className="scroll-mt-24">
-				<h1>Collected Portfolio Works</h1>
+			<section id="portfolio" className="scroll-mt-30">
+				<h1>— Collected Portfolio Works —</h1>
 				<div className="flex">
 					<div>
 						<TallProjectModal

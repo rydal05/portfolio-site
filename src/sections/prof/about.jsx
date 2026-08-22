@@ -6,7 +6,7 @@ import heroImage from '/src/assets/REDPANDA.jpg';
 export default function About() {
 	return (
 		<>
-			<section id="home" className="scroll-mt-24">
+			<section id="home" className="scroll-mt-30">
 				<hr className="m-20" />
 				<h1 className="font-timesnewroman">Pleased to make your acquaintance.</h1>
 				<div className="flex justify-between">

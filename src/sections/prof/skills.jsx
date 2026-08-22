@@ -53,7 +53,7 @@ const languages = [
 export default function Skills() {
 	return (
 		<>
-			<section id="skills" className="scroll-mt-24">
+			<section id="skills" className="scroll-mt-30">
 				<h1>Some of my skillset</h1>
 				<div className="flex justify-center gap-20">
 					<ListModal

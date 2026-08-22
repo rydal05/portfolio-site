@@ -3,8 +3,8 @@ import TextBlock from "/src/components/TextBlock";
 
 export default function Education() {
 	return (
-		<section id="education" className="scroll-mt-24">
-			<h1>Education History</h1>
+		<section id="education" className="scroll-mt-30">
+			<h1>— Education History —</h1>
 			<div className="flex justify-between">
 				<TextBlock
 					title="Palm Beach Central High School"
