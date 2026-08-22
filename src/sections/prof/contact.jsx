@@ -4,7 +4,7 @@ export default function Contact() {
 			<section id="contact" className="scroll-mt-30 flex justify-between">
 				<div>
 					<h1>Extend a hand</h1>
-					<ul className="text-3xl">
+					<ul className="text-3xl text-left">
 						<li>
 							Email:{" "}
 							<a href="mailto:rdalton2405@gmail.com">
@@ -21,8 +21,8 @@ export default function Contact() {
 				</div>
 
 				<div>
-					<h1>Alternatively, see what I'm up to</h1>
-					<ul className="text-3xl">
+					<h1>See what I'm up to</h1>
+					<ul className="text-3xl text-right">
 						<li>
 							Github:{" "}
 							<a href="https://github.com/rydal05">rydal05</a>
