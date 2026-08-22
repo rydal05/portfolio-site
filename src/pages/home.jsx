@@ -11,6 +11,7 @@ import Skills from "/src/sections/prof/skills";
 import Contact from "/src/sections/prof/contact";
 import Deployed from "/src/sections/prof/deployed";
 import Quote from "/src/components/Quote";
+import Personal from "/src/sections/prof/personalLink";
 
 function Home() {
 	return (
@@ -83,6 +84,12 @@ function Home() {
 				Benevolence
 			</Quote>
 			<hr className="m-20" />
+
+			<Personal />
+			<Quote>
+
+			</Quote>
+			<hr className="m-20"/>
 		</>
 	);
 }
