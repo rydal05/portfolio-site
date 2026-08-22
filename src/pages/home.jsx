@@ -20,24 +20,23 @@ function Home() {
 			<Quote>
 				<ul className="flex justify-between">
 					<li>
-						<ul>
+						<ul className="text-left">
 							<li>
-								Alas, <i>Ryan</i> is going . . . Undesired,
-								unwanted
+								Alas, <i>Ryan</i> is going . . .
 							</li>
 							<li>
-								them, What makes them go? It is nothing else
-								than the
+								Undesired, unwanted them, What makes them go?
 							</li>
 							<li>
-								principle of the man who has the reason for
-								being.
+								It is nothing else than the principle of the man who has the reason for being.
 							</li>
 						</ul>
 					</li>
 					<li>
-						<ul>
-							<li>嗚呼、斑鳩が行く・・・・・・</li>
+						<ul className="text-right">
+							<li>
+								嗚呼、斑鳩が行く・・・・・・
+							</li>
 							<li>
 								望まれることなく、浮き世から捨てられし彼等を動かすもの。
 							</li>
@@ -89,7 +88,7 @@ function Home() {
 			<Quote>
 
 			</Quote>
-			<hr className="m-20"/>
+			<hr className="m-20" />
 		</>
 	);
 }
