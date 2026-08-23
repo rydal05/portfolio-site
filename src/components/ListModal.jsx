@@ -7,12 +7,12 @@ export default function ListModal({ title, text }) {
 					{text.map((item) => (
 						<div
 							key={item.name}
-							className="flex m-2"
+							className="flex items-center gap-3"
 						>
 							<img
 								src={item.icon}
 								alt={item.name}
-								className="w-10 h-10 bg-white rounded-xl" 
+								className="w-10 h-10 bg-white rounded-xl flex" 
 							/>
 							{item.name}
 						</div>
