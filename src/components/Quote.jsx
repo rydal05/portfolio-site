@@ -1,8 +1,8 @@
 export default function quote({ children }) {
 	return (
 		<>
-			<div className="">
-				<h4>{children}</h4>
+			<div>
+				<h4 className="font-helvetica mt-12">{children}</h4>
 			</div>
 		</>
 	);
