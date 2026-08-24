@@ -9,7 +9,7 @@ export default function Portfolio() {
 				<h1>— Collected Portfolio Works —</h1>
 				<div className="flex">
 					<div>
-						<TallProjectModal
+						<SquareProjectModal
 							link="https://github.com/rydal05/SuruScraper"
 							title="SuruScraper 駿—自動収集"
 							image="/textures/starfield_bg.png"
@@ -28,7 +28,7 @@ export default function Portfolio() {
 							hour, providing speedy retrival and logging of
 							price, stock, and availability information for
 							products on the site.
-						</TallProjectModal>
+						</SquareProjectModal>
 					</div>
 					<div>
 						<SquareProjectModal
