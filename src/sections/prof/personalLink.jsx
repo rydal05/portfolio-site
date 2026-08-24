@@ -3,7 +3,7 @@ export default function Personal() {
 		<>
 			<section id="personal">
 				<h1>Get to know me better</h1>
-                <p>If you'd like to know more about me and my personal life, click here.</p>
+                <p>If you'd like to know more about me personally, click here.</p>
             </section>
 		</>
 	);
