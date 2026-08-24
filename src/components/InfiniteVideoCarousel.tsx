@@ -21,9 +21,9 @@ export default function InfiniteVideoCarousel() {
   const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
 
   return (
-    <div className="rounded-xl relative w-full overflow-hidden bg-black py-10">
-      <div className="rounded-xl  pointer-events-none absolute bottom-0 left-0 top-0 z-20 w-24 bg-gradient-to-r from-black to-transparent" />
-      <div className="rounded-xl pointer-events-none absolute bottom-0 right-0 top-0 z-20 w-24 bg-gradient-to-l from-black to-transparent" />
+    <div className="rounded-xl relative w-full overflow-hidden bg-[#212121] py-10">
+      <div className="rounded-xl  pointer-events-none absolute bottom-0 left-0 top-0 z-20 w-24 bg-linear-to-r from-[#212121] to-transparent" />
+      <div className="rounded-xl pointer-events-none absolute bottom-0 right-0 top-0 z-20 w-24 bg-linear-to-l from-[#212121] to-transparent" />
 
       <div className="group flex w-max animate-marquee hover:[animation-play-state:paused]">
         {[...VIDEOS, ...VIDEOS].map((video, idx) => {
