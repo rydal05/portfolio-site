@@ -7,7 +7,7 @@ export default function ListModal({ title, text }) {
 					{text.map((item) => (
 						<div
 							key={item.name}
-							className="flex items-center gap-3"
+							className="flex items-center gap-3 min-expandable "
 						>
 							<img
 								src={item.icon}
