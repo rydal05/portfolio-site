@@ -84,7 +84,7 @@ export default function About() {
 						</div>
 					</div>
 
-					<img src={heroImage} width="600" className="h-60 object-contain " />
+					<img src={heroImage}  className="w-1/2 object-contain " />
 				</div>
 				<div className="flex justify-between my-20">
 					<span className="text-5xl flex">
