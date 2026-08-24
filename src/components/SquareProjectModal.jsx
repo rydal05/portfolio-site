@@ -15,7 +15,7 @@ export default function SquareProjectModal({ link, title, image, skills, childre
 				{image && ( 
 					<img src={image} className="h-48 w-96 object-contain" />
 				)}
-				<p>{children}</p>
+				<p className="text-left">&emsp;{children}</p>
 
 			</div>
 		</>
