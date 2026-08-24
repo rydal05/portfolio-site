@@ -16,7 +16,7 @@ export default function Header() {
 
 	return (
 		<>
-			<header className="sticky top-5 items-center justify-between pointer-events-auto z-50 rounded-full border border-white/24 bg-white/8 transition-all duration-300 hover:bg-white/12 focus-within:bg-white/12 md:block backdrop-blur-[2px] md:focus-within:backdrop-blur-[2px] m-4">
+			<header className="sticky top-5 items-center justify-between pointer-events-auto z-50 rounded-full border border-white/24 bg-white/8 transition-all duration-300 hover:bg-white/12 focus-within:bg-white/12 md:block backdrop-blur-[2px] md:focus-within:backdrop-blur-[2px] m-4 z-999">
 				<div className="flex justify-between">
 					<div className="font-semibold text-white m-4">
 						Ryan Dalton
