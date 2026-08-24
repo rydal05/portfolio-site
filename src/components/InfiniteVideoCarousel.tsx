@@ -33,7 +33,7 @@ export default function InfiniteVideoCarousel() {
             <div
               key={`${video.id}-${idx}`}
               onClick={() => setActiveVideoId(video.id)}
-              className="relative mx-3 aspect-video w-72 shrink-0 cursor-pointer overflow-hidden rounded-xl border border-white/10 bg-neutral-900 shadow-lg transition-all duration-300 hover:scale-105 hover:border-red-500/50 hover:shadow-red-500/10 sm:w-80"
+              className="relative mx-3 aspect-video w-72 shrink-0 cursor-pointer overflow-hidden rounded-xl border border-white/10 bg-neutral-900 shadow-lg transition-all duration-300 hover:scale-105 hover:border-[#e94f37] hover:shadow-red-500/10 sm:w-80"
             >
               <img
                 src={thumbnailUrl}
@@ -42,7 +42,7 @@ export default function InfiniteVideoCarousel() {
               />
 
               <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-80 transition-opacity duration-300 hover:opacity-100 hover:bg-black/20">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-red-600/90 text-white shadow-md transition-transform duration-300 hover:scale-110">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#e94f37] text-white shadow-md transition-transform duration-300 hover:scale-110">
                   <svg
                     className="ml-0.5 h-6 w-6 fill-current"
                     viewBox="0 0 24 24"
