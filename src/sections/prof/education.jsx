@@ -11,7 +11,7 @@ export default function Education() {
 					degree="High School Diploma"
 					years="2019-2023"
 				>
-					<ul>
+					<ul className="list-disc">
 						<li className="font-timesnewroman">
 							Obtained AICE Diploma and got the Florida Bright
 							Futures Scholarship.
@@ -30,7 +30,7 @@ export default function Education() {
 					Science Degree"
 					years="2023-2025"
 				>
-					<ul>
+					<ul className="list-disc">
 						<li>
 							Obtained an Arituclated A.S in Computer Science
 							while working full-time.
@@ -45,8 +45,8 @@ export default function Education() {
 					title="University of Central Florida"
 					degree="Bachelor's Degree: Computer Science"
 				>
-					<ul>
-						<li className="">
+					<ul className="list-disc">
+						<li>
 							Currently pursuing my bachelor's degree here.
 						</li>
 						<li>
@@ -54,10 +54,10 @@ export default function Education() {
 							in the near future
 						</li>
 						<li>
-							I participate in the Hack@UCF and KnightHacks club,
-							and look forward to joining the Satalite club. Avid
-							participant of KnightHacks hackathons and other
-							events posted by computer clubs.
+							Active dues paying member of KnightHacks
+						</li>
+						<li>
+							Looking to join other clubs coming semester (Satalite Club, Hack@UCF, etc)
 						</li>
 					</ul>
 				</TextBlock>
