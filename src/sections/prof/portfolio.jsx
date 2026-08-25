@@ -7,6 +7,7 @@ export default function Portfolio() {
 		<>
 			<section id="portfolio" className="scroll-mt-30">
 				<h1>— Collected Portfolio Works —</h1>
+				{/* as you scroll down these should pop into view */}
 				<div className="flex flex-col justify-between">
 					<div className="flex flex-row justify-between">
 						<SquareProjectModal

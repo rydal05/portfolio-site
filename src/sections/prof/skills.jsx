@@ -60,7 +60,7 @@ export default function Skills() {
 						title="Frameworks & Libraries"
 						text={frameworks}
 					/>
-
+{/* each of these skill modals will fade in one by one */}
 					<ListModal title="Languages" text={languages} />
 
 					<ListModal title="AI & Machine Learning" text={AIML} />

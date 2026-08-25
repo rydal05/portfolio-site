@@ -76,7 +76,7 @@ function Home() {
 				dreams.
 			</Quote>
 			<hr className="m-20" />
-
+{/* quotes should all animate fading upward from the delimiter bar */}
 			<Contact />
 			<Quote>
 				Respect, Honesty, Courage, Rectitude, Loyalty, Honour,
@@ -84,11 +84,11 @@ function Home() {
 			</Quote>
 			<hr className="m-20" />
 
-			<Personal />
+			{/* <Personal />
 			<Quote>
 
 			</Quote>
-			<hr className="m-20" />
+			<hr className="m-20" /> */}
 		</>
 	);
 }

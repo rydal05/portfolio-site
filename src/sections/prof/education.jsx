@@ -23,7 +23,7 @@ export default function Education() {
 					</ul>
 					<br />
 				</TextBlock>
-
+{/* should fade in from left to right timelinelike */}
 				<TextBlock
 					title="Valencia College"
 					degree="Associates Degree: Articulated Computer

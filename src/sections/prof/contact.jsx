@@ -3,7 +3,7 @@ export default function Contact() {
 		<>
 			<section id="contact" className="scroll-mt-30 flex justify-between">
 				<div>
-					<h1>Extend a hand</h1>
+					<h1>— Extend a hand</h1>
 					<ul className="text-3xl text-left">
 						<li>
 							Email:{" "}
@@ -21,7 +21,11 @@ export default function Contact() {
 				</div>
 
 				<div>
-					<h1>See what I'm up to</h1>
+					<h1>or...</h1>
+				</div>
+{/* animation where the elements extend out from the center "or" text */}
+				<div>
+					<h1>See what I'm up to —</h1>
 					<ul className="text-3xl text-right">
 						<li>
 							Github:{" "}
