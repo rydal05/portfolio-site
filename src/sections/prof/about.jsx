@@ -8,7 +8,7 @@ export default function About() {
 		<>
 			<section id="home" className="scroll-mt-30">
 				<hr className="m-20" />
-				<h1 className="font-timesnewroman">Pleased to make your acquaintance.</h1>
+				<h1 className="font-timesnewroman">— Pleased to make your acquaintance. —</h1>
 				<div className="flex justify-between">
 					<div className="flex-row text-left">
 						<h2 className="font-timesnewroman">
@@ -111,7 +111,7 @@ export default function About() {
 						</span>
 					</span>
 					<span className="text-5xl flex text-left">
-						424
+						600+
 						<span className="text-sm text-left self-center mx-4">
 							commits
 							<br /> in the past 3 months
