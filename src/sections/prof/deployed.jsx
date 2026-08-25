@@ -17,7 +17,7 @@ export default function Deployed() {
 				<ul>
 					<li></li>
 					<li>
-						Contact <a href="mailtodevjcmedia@gmail.com">devjcmedia@gmail.com</a> for more details
+						Contact <a href="mailto:devjcmedia@gmail.com">devjcmedia@gmail.com</a> for more details
 					</li>
 				</ul>
 			</div>
