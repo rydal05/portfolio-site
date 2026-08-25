@@ -14,6 +14,12 @@ export default function Deployed() {
 					million views on YouTube alone, with an additional ~50
 					million on the TikTok platform.
 				</p>
+				<ul>
+					<li></li>
+					<li>
+						Contact <a href="mailtodevjcmedia@gmail.com">devjcmedia@gmail.com</a> for more details
+					</li>
+				</ul>
 			</div>
 		</>
 	);
