@@ -245,7 +245,6 @@ li a:hover {
   opacity: 1;
 }
 
-/* Strip 1 — primary blue */
 .marquee-strip--1 {
   background: #d14934;
   padding: 10px 0;
@@ -264,8 +263,6 @@ li a:hover {
   animation: scrollLeft 15s linear infinite;
 }
 
-/* Strip 2 — dark,
-outlined text */
 .marquee-strip--2 {
   background: #060b18;
   padding: 10px 0;
@@ -301,9 +298,6 @@ outlined text */
 }
 
 @keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
   100% {
     transform: translateX(-50%);
   }
