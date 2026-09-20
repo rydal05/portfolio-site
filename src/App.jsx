@@ -1,39 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import Home from "/src/pages/home";
-import About from "/src/sections/prof/about";
-import Portfolio from "/src/sections/prof/portfolio";
-import Contact from "/src/sections/prof/contact";
-import Layout from "/src/Layout";
-import Skills from "/src/sections/prof/skills";
-
-//TODO: update this to dynamically pull from pages in the pages subdirectory or reference a centralized dictionary for easier less confusing accesses
-const navigation = [
-	{ name: "Professional", href: "", element: Home },
-	{ name: "Personal", href: "", element: Home },
-];
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/home';
+import Layout from './Layout';
 export default function App() {
-	return (
-		<>
-			<Router>
-				<Routes>
-					<Route element={<Layout />}>
-						{navigation.map((item) => {
-							const Component = item.element;
-							return (
-								<Route
-									key={item.name}
-									path={item.href}
-									element={<Component />}
-								/>
-							);
-						})}
-					</Route>
-				</Routes>
-			</Router>
-		</>
-	);
+  return <BrowserRouter><Routes><Route element={<Layout />}><Route index element={<Home />} /><Route path="*" element={<div className="not-found"><p className="eyebrow">404 / A little off course</p><h1>Nothing here. <em>Yet.</em></h1><a className="button button-primary" href="/">Back to the portfolio ↗</a></div>} /></Route></Routes></BrowserRouter>;
 }
-
-

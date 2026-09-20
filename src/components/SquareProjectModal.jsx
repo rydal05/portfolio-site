@@ -1,4 +1,3 @@
-import bubble from "/src/components/bubble";
 
 export default function SquareProjectModal({ link, title, image, languages, frameworks, tools, libraries, children }) {
 	return (

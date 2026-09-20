@@ -1,4 +1,6 @@
-import ListModal from "/src/components/ListModal";
+import ListModal from '../../components/ListModal';
+import SectionHeading from '../../components/SectionHeading';
+import Reveal from '../../components/Reveal';
 
 const iconModules = import.meta.glob("/src/assets/skill_icons/*.{svg,png}", {
 	eager: true,
@@ -51,23 +53,6 @@ const languages = [
 ];
 
 export default function Skills() {
-	return (
-		<>
-			<section id="skills" className="scroll-mt-30">
-				<h1>Some of my skillset</h1>
-				<div className="flex justify-center gap-20">
-					<ListModal
-						title="Frameworks & Libraries"
-						text={frameworks}
-					/>
-{/* each of these skill modals will fade in one by one */}
-					<ListModal title="Languages" text={languages} />
-
-					<ListModal title="AI & Machine Learning" text={AIML} />
-
-					<ListModal title="Tools" text={tools} />
-				</div>
-			</section>
-		</>
-	);
+  const groups = [['Languages', languages], ['Frameworks & libraries', frameworks], ['Tools & infrastructure', tools], ['AI & machine learning', AIML]];
+  return <section id="skills" className="section skills-section"><Reveal><SectionHeading number="04" label="The toolkit" title="Different tools." accent="Same curiosity.">From low-level systems to the web, these are the technologies I reach for, experiment with, and keep learning.</SectionHeading></Reveal><div className="skills-grid">{groups.map(([title, items], index) => <Reveal key={title} delay={index * 0.06}><ListModal title={title} text={items} /></Reveal>)}</div></section>;
 }

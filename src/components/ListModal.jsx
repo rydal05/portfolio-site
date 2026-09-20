@@ -1,24 +1,3 @@
 export default function ListModal({ title, text }) {
-	return (
-		<>
-			<div className="">
-				<h2>{title}</h2>
-				<div className="gap-4 pr-4 overflow-y-auto max-h-[20vh]">
-					{text.map((item) => (
-						<div
-							key={item.name}
-							className="flex items-center gap-3 min-expandable "
-						>
-							<img
-								src={item.icon}
-								alt={item.name}
-								className="w-10 h-10 bg-white rounded-xl flex" 
-							/>
-							{item.name}
-						</div>
-					))}
-				</div>
-			</div>
-		</>
-	);
+  return <div className="skill-group"><h3>{title}<span>{text.length.toString().padStart(2, '0')}</span></h3><ul className="skill-list">{text.map(item => <li key={item.name}><img src={item.icon} alt="" loading="lazy" width="24" height="24" /><span>{item.name}</span></li>)}</ul></div>;
 }

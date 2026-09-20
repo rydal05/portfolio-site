@@ -1,86 +1,34 @@
-import React, { useState } from "react";
-
-interface Video {
-  id: string;
-  title: string;
-}
-
-const VIDEOS: Video[] = [
-  { id: "ftU5GaDe4X0", title: "Video 1" },
-  { id: "IYdfunVUUug", title: "Video 2" },
-  { id: "9WNEySmUK00", title: "Video 3" },
-  { id: "hsUAc1BIiug", title: "Video 4" },
-  { id: "2ZWfzcMz7dM", title: "Video 5" },
-  { id: "Jbdj5qtpveo", title: "Video 6" },
-  { id: "wYgHix1xO4M", title: "Video 7" },
-  { id: "MvX_Kal5daQ", title: "Video 8" },
-  { id: "x5SMS1vc7ao", title: "Video 9" },
-];
-
+import { useEffect, useRef, useState } from 'react';
+import Icon from './Icon';
+const videos = ['ftU5GaDe4X0', 'IYdfunVUUug', '9WNEySmUK00', 'hsUAc1BIiug', '2ZWfzcMz7dM', 'Jbdj5qtpveo', 'wYgHix1xO4M', 'MvX_Kal5daQ', 'x5SMS1vc7ao'];
 export default function InfiniteVideoCarousel() {
-  const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
-
-  return (
-    <div className="rounded-xl relative w-full overflow-hidden bg-[#212121] py-10">
-      <div className="rounded-xl  pointer-events-none absolute bottom-0 left-0 top-0 z-20 w-24 bg-linear-to-r from-[#212121] to-transparent" />
-      <div className="rounded-xl pointer-events-none absolute bottom-0 right-0 top-0 z-20 w-24 bg-linear-to-l from-[#212121] to-transparent" />
-
-      <div className="group flex w-max animate-marquee hover:[animation-play-state:paused]">
-        {[...VIDEOS, ...VIDEOS].map((video, idx) => {
-          const thumbnailUrl = `https://img.youtube.com/vi/${video.id}/hqdefault.jpg`;
-
-          return (
-            <div
-              key={`${video.id}-${idx}`}
-              onClick={() => setActiveVideoId(video.id)}
-              className="relative mx-3 aspect-video w-72 shrink-0 cursor-pointer overflow-hidden rounded-xl border border-white/10 bg-neutral-900 shadow-lg transition-all duration-300 hover:scale-105 hover:border-[#e94f37] hover:shadow-red-500/10 sm:w-80"
-            >
-              <img
-                src={thumbnailUrl}
-                alt={video.title}
-                className="h-full w-full object-cover transition-transform duration-500 hover:scale-110"
-              />
-
-              <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-80 transition-opacity duration-300 hover:opacity-100 hover:bg-black/20">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#e94f37] text-white shadow-md transition-transform duration-300 hover:scale-110">
-                  <svg
-                    className="ml-0.5 h-6 w-6 fill-current"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-
-      {activeVideoId && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
-          onClick={() => setActiveVideoId(null)}
-        >
-          <div
-            className="relative aspect-video w-full max-w-4xl overflow-hidden rounded-2xl bg-black border border-white/10 shadow-2xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={() => setActiveVideoId(null)}
-              className="absolute right-4 top-4 z-10 rounded-full bg-black/60 p-2 text-white hover:bg-black"
-            >
-              ✕
-            </button>
-            <iframe
-              src={`https://www.youtube.com/embed/${activeVideoId}?autoplay=1&rel=0`}
-              title="YouTube video player"
-              className="h-full w-full border-0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        </div>
-      )}
-    </div>
-  );
+  const [active, setActive] = useState<string | null>(null);
+  const [position, setPosition] = useState(0);
+  const dialog = useRef<HTMLDialogElement>(null);
+  const returnFocus = useRef<HTMLButtonElement | null>(null);
+  const rail = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!active) return;
+    const element = dialog.current;
+    const previousOverflow = document.body.style.overflow;
+    element?.showModal();
+    document.body.style.overflow = 'hidden';
+    return () => {
+      element?.close();
+      document.body.style.overflow = previousOverflow;
+      returnFocus.current?.focus();
+    };
+  }, [active]);
+  function move(direction: number) {
+    const element = rail.current;
+    if (!element) return;
+    const card = element.querySelector('button');
+    const distance = (card?.getBoundingClientRect().width || 300) + 20;
+    element.scrollBy({ left: direction * distance, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  }
+  return <div className="video-showcase"><div className="video-rail" ref={rail} onScroll={event => {
+    const element = event.currentTarget;
+    const max = element.scrollWidth - element.clientWidth;
+    setPosition(max > 0 ? element.scrollLeft / max : 0);
+  }}>{videos.map((id, index) => <button className="video-card" key={id} aria-label={`Play animation project ${index + 1}`} onClick={event => { returnFocus.current = event.currentTarget; setActive(id); }}><img src={`https://img.youtube.com/vi/${id}/hqdefault.jpg`} alt="" loading="lazy" width="480" height="360" /><span className="video-play"><Icon name="play" size={22} /></span><span className="video-caption">ANIMATION / {String(index + 1).padStart(2, '0')}<Icon size={15} /></span></button>)}</div><div className="video-controls"><span>Nine projects. A different kind of canvas.</span><div><button className="icon-button" aria-label="Previous videos" disabled={position < 0.01} onClick={() => move(-1)}>←</button><button className="icon-button" aria-label="Next videos" disabled={position > 0.99} onClick={() => move(1)}>→</button></div></div>{active && <dialog ref={dialog} className="video-dialog" aria-label="Animation project video" onCancel={() => setActive(null)} onClose={() => setActive(null)} onClick={event => { if (event.target === event.currentTarget) setActive(null); }}><div className="dialog-header"><span>Animation & stage programming</span><button autoFocus className="icon-button" aria-label="Close video" onClick={() => setActive(null)}><Icon name="close" /></button></div><iframe src={`https://www.youtube-nocookie.com/embed/${active}?autoplay=1&rel=0`} title="Animation project video" allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen /><p>Playback unavailable? <a href={`https://www.youtube.com/watch?v=${active}`} target="_blank" rel="noreferrer">Watch on YouTube ↗</a></p></dialog>}</div>;
 }

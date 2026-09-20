@@ -1,39 +1,37 @@
-import { href, Link } from "react-router-dom";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from 'react';
+import Icon from './Icon';
 
-//TODO: update this to dynamically pull from pages in the pages subdirectory or reference a centralized dictionary for easier less confusing accesses
-
-const navigation = [
-	{ name: "Home", href: "/#home" },
-	{ name: "Education", href: "/#education" },
-	{ name: "Portfolio", href: "/#portfolio" },
-	{ name: "Skills", href: "/#skills" },
-	{ name: "Contact", href: "/#contact" },
-];
-
+const navigation = [['home', 'Home'], ['portfolio', 'Work'], ['education', 'Education'], ['skills', 'Skills'], ['contact', 'Contact']];
 export default function Header() {
-
-
-	return (
-		<>
-			<header className="sticky top-5 items-center justify-between pointer-events-auto rounded-full border border-white/24 bg-white/8 transition-all duration-300 hover:bg-white/12 focus-within:bg-white/12 md:block backdrop-blur-[2px] md:focus-within:backdrop-blur-[2px] m-4 z-999">
-				<div className="flex justify-between">
-					<div className="font-semibold text-white m-4">
-						Ryan Dalton
-					</div>
-					<div className="m-2">
-						{navigation.map((item) => {
-							return (
-								<a href={item.href} key={item.name}>
-									<button className="rounded-full font-semibold tracking-[0.02em] [text-shadow:0_1px_6px_rgba(0,0,0,0.38)] transition-colors duration-200 hover:[text-shadow:0_1px_8px_rgba(255,255,255,0.34)] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-0 px-3 py-2 text-[0.82rem] text-white hover:text-[#1d7cff] hover:bg-white/9 ">
-										{item.name}
-									</button>
-								</a>
-							);
-						})}
-					</div>
-				</div>
-			</header>
-		</>
-	);
+  const [active, setActive] = useState('home');
+  const [open, setOpen] = useState(false);
+  const menuButton = useRef(null);
+  useEffect(() => {
+    let frame;
+    const updateActive = () => {
+      const cutoff = Math.min(window.innerHeight * 0.35, 240);
+      const current = [...navigation].reverse().find(([id]) => {
+        const section = document.getElementById(id);
+        return section && section.getBoundingClientRect().top <= cutoff;
+      });
+      setActive(current?.[0] || 'home');
+    };
+    const scheduleUpdate = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(updateActive);
+    };
+    updateActive();
+    window.addEventListener('scroll', scheduleUpdate, { passive: true });
+    window.addEventListener('resize', scheduleUpdate);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener('scroll', scheduleUpdate);
+      window.removeEventListener('resize', scheduleUpdate);
+    };
+  }, []);
+  return <header className="site-header" onKeyDown={event => { if (event.key === 'Escape') { setOpen(false); menuButton.current?.focus(); } }}>
+    <a className="wordmark" href="/#home" aria-label="Ryan Dalton, home" onClick={() => setOpen(false)}><span className="brand-mark">rd<span>.</span></span><span>Ryan Dalton</span></a>
+    <button ref={menuButton} className="menu-toggle icon-button" aria-label={open ? 'Close navigation' : 'Open navigation'} aria-expanded={open} aria-controls="main-navigation" onClick={() => setOpen(!open)}><Icon name={open ? 'close' : 'menu'} /></button>
+    <nav id="main-navigation" className={open ? 'navigation is-open' : 'navigation'} aria-label="Main navigation">{navigation.map(([id, label]) => <a key={id} className={active === id ? 'active' : ''} href={`/#${id}`} aria-current={active === id ? 'location' : undefined} onClick={() => setOpen(false)}>{label}{id === 'contact' && <Icon size={13} />}</a>)}</nav>
+  </header>;
 }

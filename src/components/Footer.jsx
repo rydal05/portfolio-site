@@ -1,19 +1,3 @@
 export default function Footer() {
-	return (
-		<>
-			<footer className="footer flex justify-between">
-				<div>
-					<p className="text-base font-thin text-left">
-						This site was built using React+Vite with TailwindCSS.
-					</p>
-				</div>
-
-				<div>
-					<p className="text-base font-thin text-right">
-						@2026 Ryan Dalton
-					</p>
-				</div>
-			</footer>
-		</>
-	);
+  return <footer className="site-footer"><a href="#home" className="footer-brand">Ryan Dalton<span>.</span></a><p>Made with curiosity. Built with React + Vite.</p><a href="#home">Back to top ↑</a><span>© {new Date().getFullYear()}</span></footer>;
 }

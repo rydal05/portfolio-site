@@ -1,6 +1,5 @@
-import bubble from "/src/components/bubble";
 
-export default function TallProjectModal({ link, title, image, skills, children}) {
+export default function TallProjectModal({ link, title, image, children}) {
 	return (
 		<>
 			<div className="flex max-w-xl min-h-2xl flex-col p-10 gap-5 bg-[#212121] hover:bg-[#303030]">

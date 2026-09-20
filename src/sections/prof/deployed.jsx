@@ -1,26 +1,6 @@
-import InfiniteVideoCarousel from "/src/components/InfiniteVideoCarousel";
-
+import InfiniteVideoCarousel from '../../components/InfiniteVideoCarousel';
+import SectionHeading from '../../components/SectionHeading';
+import Reveal from '../../components/Reveal';
 export default function Deployed() {
-	return (
-		<>
-			<h1>— Freelance Work —</h1>
-			<h2>3d animation & programming work I've submitted</h2>
-			<InfiniteVideoCarousel />
-			<div className="flex flex-col items-center">
-				<p className="w-[50%] mx-auto">
-					Assisted in driving ~5 million in interactions (Likes,
-					Comments, Reposts) across YouTube and Tiktok through 3d
-					animation and stage programming work. Additionally drove ~75
-					million views on YouTube alone, with an additional ~50
-					million on the TikTok platform.
-				</p>
-				<ul>
-					<li></li>
-					<li>
-						Contact <a href="mailto:devjcmedia@gmail.com">devjcmedia@gmail.com</a> for more details
-					</li>
-				</ul>
-			</div>
-		</>
-	);
+  return <section id="freelance" className="section freelance-section"><Reveal><SectionHeading number="02" label="Beyond the code" title="A different kind" accent="of motion.">3D animation and stage programming. Creative work that found its way to millions of screens.</SectionHeading></Reveal><Reveal><InfiniteVideoCarousel /></Reveal><div className="freelance-bottom"><p>Contributed animation and programming to work reaching approximately <strong>75 million YouTube views</strong>, <strong>50 million TikTok views</strong>, and <strong>5 million interactions</strong>.</p><a href="mailto:devjcmedia@gmail.com">Project references <span>↗</span></a></div></section>;
 }
