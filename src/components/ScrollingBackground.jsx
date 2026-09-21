@@ -1,6 +1,3 @@
 export default function ScrollingBackground() {
-    return (
-        <div className="scrolling-bg"/>
-    );
-
+	return <div className="scrolling-bg" />;
 }

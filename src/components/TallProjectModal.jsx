@@ -1,5 +1,4 @@
-
-export default function TallProjectModal({ link, title, image, children}) {
+export default function TallProjectModal({ link, title, image, children }) {
 	return (
 		<>
 			<div className="flex max-w-xl min-h-2xl flex-col p-10 gap-5 bg-[#212121] hover:bg-[#303030]">
@@ -11,11 +10,10 @@ export default function TallProjectModal({ link, title, image, children}) {
 						{title}
 					</a>
 				</h2>
-				{image && ( 
+				{image && (
 					<img src={image} className="h-48 w-96 object-contain" />
 				)}
 				<p>{children}</p>
-
 			</div>
 		</>
 	);

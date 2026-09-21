@@ -1,9 +1,5 @@
 import React from "react";
 
-export default function Personal(){
-    return (
-    <>
-    hello sonion 
-    </>
-    );
+export default function Personal() {
+	return <>hello sonion</>;
 }

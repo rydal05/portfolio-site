@@ -1,7 +1,7 @@
-export default function bubble ({text}) {
-    return (
-        <>
-            <div>{text}</div>
-        </>
-    )
+export default function bubble({ text }) {
+	return (
+		<>
+			<div>{text}</div>
+		</>
+	);
 }

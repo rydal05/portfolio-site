@@ -28,7 +28,8 @@ export default function About() {
 						<CycleText />
 					</div>
 					<p className="hero-description">
-						From the first line of code to the last little detail.
+						I've been obsessed with computers for as long as I could
+						remember.
 						<br className="desktop-break" /> I build games,
 						full-stack applications, and tools
 						<br className="desktop-break" /> that turn curiosity
@@ -86,9 +87,9 @@ export default function About() {
 					<div className="portrait-label">
 						<span className="tiny-star">✳</span>
 						<div>
-							A little curious.
+							A curious animal.
 							<br />
-							<em>Always creating.</em>
+							<em>For a curious individual.</em>
 						</div>
 					</div>
 					<span className="photo-index">
