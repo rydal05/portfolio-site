@@ -4,7 +4,7 @@ export const projects = [
 		name: "SuruScraper",
 		subtitle: "駿 — 自動収集",
 		category: "Data & AI",
-		type: "Full-stack · Data automation",
+		type: "Full-stack · Data automation · Networking",
 		summary:
 			"A self-hosted watchful eye on Suruga-ya. Tracks prices, stock, and availability across 6,000 pages an hour.",
 		tags: ["Python", "React", "SQL", "Docker"],
@@ -17,7 +17,7 @@ export const projects = [
 		name: "Polar Star Engine",
 		subtitle: "Built closer to the metal.",
 		category: "Games & systems",
-		type: "Game development · Engine",
+		type: "Game development · Engine · Cross-platform Compilation",
 		summary:
 			"A 2D shoot-’em-up engine written in C/C++ with SDL3, designed with hardware as old as the PlayStation 1 in mind.",
 		tags: ["C", "C++", "SDL3", "Vulkan", "Linux"],
@@ -30,7 +30,7 @@ export const projects = [
 		name: "CourseKnight",
 		subtitle: "A little less deadline dread.",
 		category: "Web",
-		type: "Web development · Student tools",
+		type: "Web development · Student tools · Hackathon",
 		summary:
 			"Canvas updates, grades, and announcements delivered to Discord, with Gemini-powered summaries and a little encouragement.",
 		tags: ["TypeScript", "React", "Gemini"],
@@ -43,7 +43,7 @@ export const projects = [
 		name: "Freeira",
 		subtitle: "Find your next contribution.",
 		category: "Web",
-		type: "Open source · Developer tools",
+		type: "Open source · Developer tools · Hackathon",
 		summary:
 			"Connecting developers with GitHub projects that need a helping hand, by making overlooked issues easier to discover.",
 		tags: ["TypeScript", "React", "Tailwind CSS"],
@@ -56,9 +56,9 @@ export const projects = [
 		name: "DX9FP",
 		subtitle: "Old games. New possibilities.",
 		category: "Games & systems",
-		type: "Systems · Game compatibility",
+		type: "Systems · Game compatibility · Windows",
 		summary:
-			"A drop-in DLL that helps older DirectX 9 games use your chosen monitor, including the CRT in a multi-monitor setup.",
+			"A drop-in DLL that helps older DirectX 9 games to decide your primary monitor at runtime, rather than depend on the system's decided primary display.",
 		tags: ["C", "C++", "MinHook"],
 		stack: "Visual Studio",
 		link: "https://github.com/rydal05/DX9FakePrimary",
@@ -69,9 +69,9 @@ export const projects = [
 		name: "Portfolio Site",
 		subtitle: "You are here.",
 		category: "Web",
-		type: "Web development · Homelab",
+		type: "Web development · Homelab · Networking",
 		summary:
-			"A personal corner of the internet, self-hosted in my homelab with automated deployments and periodic health checks.",
+			"A personal corner of the internet, self-hosted in my homelab with automated deployments and periodic health checks. Assisted with Codex to close the gap between site design and css styling.",
 		tags: ["React", "Vite", "Tailwind CSS"],
 		stack: "JavaScript, HTML, CSS, Coolify, Nixpacks, Cloudflare Tunnels, Node.js, npm, Codex",
 		link: "https://github.com/rydal05/portfolio-site",
@@ -82,12 +82,25 @@ export const projects = [
 		name: "YardPodcastStats",
 		subtitle: "Making conversations searchable.",
 		category: "Data & AI",
-		type: "Data exploration · Audio transcription",
+		type: "Data Harvesting · Data Rendering · Audio transcription",
 		summary:
-			"Turning hundreds of hours of podcast audio into searchable transcripts to explore the people and topics that keep coming up.",
-		tags: ["Python", "Whisper", "NumPy"],
+			"Turning hundreds of hours of podcast audio into searchable transcripts to explore the people and topics that keep coming up. Powered by OpenAI's WhisperModel ",
+		tags: ["Python", "Whisper", "NumPy", "Matplotlib"],
 		stack: "WhisperModel",
 		link: "https://github.com/rydal05/TheYardStats",
 		visual: "audio",
+	},
+	{
+		id: "substreamer",
+		name: "Substreamer",
+		subtitle: "Making conversations searchable.",
+		category: "Open Source Contributions",
+		type: "Portable music player · UX Feel",
+		summary:
+			"The first of many open source contributions to come, my PR incorporates common UI feel found in popular mobile streaming apps like Spotify and Apple Music.",
+		tags: ["TypeScript", "Swift", "Android", "iOS"],
+		stack: "Node.js, npm, Subsonic API, Android Studio, Ruby 3.2.",
+		link: "https://github.com/rydal05/substreamer",
+		visual: "substreamer",
 	},
 ];
