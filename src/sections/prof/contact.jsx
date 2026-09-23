@@ -25,15 +25,11 @@ export default function Contact() {
 					<span>05</span> / Extend a hand
 				</p>
 				<div className="contact-heading">
-					<h2>
-						Something in mind?
-						<br />
-						<em>You know where to find me.</em>
-					</h2>
+					<h2>Accessible by email</h2>
 					<a
 						className="contact-arrow"
 						href={`mailto:${email}`}
-						aria-label="Send Ryan an email"
+						aria-label="Send me an email"
 					>
 						<Icon size={48} />
 					</a>
