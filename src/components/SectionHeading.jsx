@@ -12,7 +12,7 @@ export default function SectionHeading({
 					<span>{number}</span> / {label}
 				</p>
 				<h2>
-					{title} <em>{accent}</em>
+					— {title} <em>{accent}</em>
 				</h2>
 			</div>
 			{children && <p className="section-intro">{children}</p>}
