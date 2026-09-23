@@ -62,7 +62,12 @@ export default function Skills() {
 	return (
 		<section id="skills" className="section skills-section">
 			<Reveal>
-				<SectionHeading number="04" label="The toolkit" title="">
+				<SectionHeading
+					number="3.0"
+					label="The toolkit"
+					title="Skills"
+					accent="A quick overview."
+				>
 					From low-level systems to the web, these are the
 					technologies I reach for, experiment with, and keep
 					learning.
