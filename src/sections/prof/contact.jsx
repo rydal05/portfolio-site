@@ -25,7 +25,7 @@ export default function Contact() {
 					<span>05</span> / Extend a hand
 				</p>
 				<div className="contact-heading">
-					<h2>Accessible by email</h2>
+					<h2>Let's Talk</h2>
 					<a
 						className="contact-arrow"
 						href={`mailto:${email}`}
@@ -37,8 +37,11 @@ export default function Contact() {
 				<div className="contact-bottom">
 					<div>
 						<p>
+							How did you end up here? What are you looking for?
+							I'd love to hear from you.
+							<br />
 							New ideas, interesting problems, or just a
-							conversation about whatever.
+							conversation about whatever. Shoot me a message.
 						</p>
 						<div className="email-row">
 							<a href={`mailto:${email}`}>{email}</a>
@@ -84,6 +87,13 @@ export default function Contact() {
 							Bluesky <Icon size={15} />
 						</a>
 					</div>
+				</div>
+				<div className="flex items-center gap-5">
+					<p>Looking to learn more about me?</p>
+					<a className="button button-primary" href="/personal">
+						Peer through my personal life
+						<Icon name="arrow" size={17} />
+					</a>
 				</div>
 			</Reveal>
 		</section>
