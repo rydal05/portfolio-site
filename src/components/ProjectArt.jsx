@@ -6,7 +6,13 @@ export default function ProjectArt({ kind }) {
 					? "02 / GAME ENGINE"
 					: kind === "scraper"
 						? "01 / AUTOMATION"
-						: "DESIGN STUDY"}
+						: kind === "course"
+							? "KnightHacks VIII Hackathon  Entry"
+							: kind === "issues"
+								? "BloomKnights Hackathon Entry "
+								: kind === "substreamer"
+									? "Open Source"
+									: "Practical Application Study"}
 			</span>
 			{kind === "scraper" ? (
 				<div className="scraper-art">
@@ -20,9 +26,6 @@ export default function ProjectArt({ kind }) {
 						<i />
 						<span>NOTIFY</span>
 					</div>
-					<span className="art-caption">
-						A watchful eye. Around the clock.
-					</span>
 				</div>
 			) : kind === "star" ? (
 				<div className="star-art">
@@ -30,18 +33,12 @@ export default function ProjectArt({ kind }) {
 					<div className="orbit orbit-two" />
 					<span className="polar-star">✦</span>
 					<span className="star-wordmark">POLAR STAR</span>
-					<span className="art-caption">
-						AN ENGINE FOR LITTLE WORLDS
-					</span>
 				</div>
 			) : kind === "course" ? (
 				<div className="course-art">
 					<span className="course-symbol">♞</span>
 					<div>
 						<span className="art-product-name">CourseKnight</span>
-						<span className="art-caption">
-							YOUR COURSES. IN THE LOOP.
-						</span>
 					</div>
 					<div className="notification-lines">
 						<i />
@@ -52,9 +49,7 @@ export default function ProjectArt({ kind }) {
 			) : kind === "issues" ? (
 				<div className="issues-art">
 					<span className="art-product-name">
-						Open source
-						<br />
-						<em>makes the world go round.</em>
+						Open source <em>makes the world go round.</em>
 					</span>
 					<div className="issue-chips">
 						<span>
@@ -70,16 +65,48 @@ export default function ProjectArt({ kind }) {
 							DX9<span className="coral">FP</span>
 						</span>
 					</div>
-					<span className="art-caption">
-						THE RIGHT SCREEN. EVERY TIME.
-					</span>
 				</div>
 			) : kind === "portfolio" ? (
 				<div className="portfolio-art">
 					rd<span>.</span>
-					<span className="art-caption">
-						PERPETUALLY UNDER CONSTRUCTION
-					</span>
+				</div>
+			) : kind === "substreamer" ? (
+				<div className="audio-art">
+					<div className="waveform">
+						{Array.from({ length: 4 }, (_, index) => (
+							<i
+								key={index}
+								style={{
+									height: `${18 + index * 25}%`,
+								}}
+							/>
+						))}
+						<i
+							style={{
+								height: `${18 + 1 * 30}%`,
+							}}
+						/>
+						<i
+							style={{
+								height: `${18 + 3 * 30}%`,
+							}}
+						/>
+						<i
+							style={{
+								height: `${18 + 1 * 30}%`,
+							}}
+						/>
+
+						{Array.from({ length: 4 }, (_, index) => (
+							<i
+								key={index}
+								style={{
+									height: `${18 + (3 - index) * 25}%`,
+								}}
+							/>
+						))}
+					</div>
+					<span className="art-caption">Substreamer</span>
 				</div>
 			) : (
 				<div className="audio-art">
