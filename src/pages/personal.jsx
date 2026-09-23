@@ -17,6 +17,9 @@ export default function Personal() {
 							alt="A sleeping panda on the bus."
 							fetchPriority="low"
 						/>
+						<figcaption>
+							<span>Content Attribution: satoroku_18</span>
+						</figcaption>
 					</figure>
 				</div>
 			</div>
