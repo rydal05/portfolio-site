@@ -8,7 +8,7 @@ export default function App() {
 			<Routes>
 				<Route element={<Layout />}>
 					<Route index element={<Home />} />
-					<Route path="personal" element={<Personal />} />
+					<Route path="/personal" element={<Personal />} />
 					<Route
 						path="*"
 						element={
