@@ -94,7 +94,7 @@ export default function Education() {
 					number="2.5"
 					label="The journey: Director's Cut"
 					title="Certifications"
-					accent="Self directed tertiary learning."
+					accent="Self directed secondary learning."
 				>
 					Outside of my formal schooling, I maintain and pursue my
 					interest in other computer related studies. An opportunity
