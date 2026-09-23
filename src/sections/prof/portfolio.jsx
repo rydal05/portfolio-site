@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { projects } from "../../data/projects";
+
 import SectionHeading from "../../components/SectionHeading";
 import Reveal from "../../components/Reveal";
 import ProjectArt from "../../components/ProjectArt";
 import Icon from "../../components/Icon";
+
 const categories = [
 	"All work",
 	"Web",
@@ -14,11 +16,21 @@ const categories = [
 export default function Portfolio() {
 	const [category, setCategory] = useState("All work");
 	const [expanded, setExpanded] = useState(false);
+
+	const handleToggleExpand = () => {
+		if (expanded) {
+			const targetSection = document.getElementById("portfolio");
+			targetSection?.scrollIntoView({ behavior: "smooth" });
+		}
+		setExpanded((prev) => !prev);
+	};
+
 	const filtered = projects.filter(
 		(project) => category === "All work" || project.category === category,
 	);
 	const visible =
 		category === "All work" && !expanded ? filtered.slice(0, 4) : filtered;
+
 	return (
 		<section id="portfolio" className="section work-section">
 			<Reveal>
@@ -73,7 +85,10 @@ export default function Portfolio() {
 								rel="noreferrer"
 								aria-label={`View ${project.name} on GitHub`}
 							>
-								<ProjectArt kind={project.visual} />
+								<ProjectArt
+									kind={project.visual}
+									tag={project.tag}
+								/>
 								<span className="art-link-icon">
 									<Icon />
 								</span>
@@ -113,20 +128,13 @@ export default function Portfolio() {
 				<div className="more-work">
 					<button
 						className="button button-outline"
-						onClick={() => setExpanded(!expanded)}
+						onClick={handleToggleExpand}
 					>
 						{expanded
 							? "Show selected projects"
-							: "Explore all 7 projects"}
+							: "Explore all " + projects.length + " projects"}
 						<Icon name={expanded ? "right" : "down"} size={16} />
 					</button>
-					<a
-						href="https://github.com/rydal05"
-						target="_blank"
-						rel="noreferrer"
-					>
-						More on GitHub <Icon size={14} />
-					</a>
 				</div>
 			)}
 		</section>
