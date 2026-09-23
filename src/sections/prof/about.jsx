@@ -21,7 +21,7 @@ export default function About() {
 					<h1>
 						Hi, I’m <em>Ryan.</em>
 						<span className="hero-asterisk" aria-hidden="true">
-							✳
+							🐬
 						</span>
 					</h1>
 					<div className="hero-role">
@@ -81,20 +81,13 @@ export default function About() {
 						/>
 						<figcaption>
 							<span>AILURIDAE</span>
-							<span>Curious by nature.</span>
+							<span>
+								The Red Panda.
+								<br />
+								My favorite animal.
+							</span>
 						</figcaption>
 					</figure>
-					<div className="portrait-label">
-						<span className="tiny-star">✳</span>
-						<div>
-							A curious animal.
-							<br />
-							<em>For a curious individual.</em>
-						</div>
-					</div>
-					<span className="photo-index">
-						FIG. 01 — THE SPIRIT ANIMAL
-					</span>
 				</Reveal>
 			</div>
 			<Reveal className="hero-bottom">
@@ -114,6 +107,16 @@ export default function About() {
 					<span>
 						Commits in a<br />
 						three-month stretch
+					</span>
+				</div>
+				<div className="hero-stat">
+					<strong>
+						21<span></span>
+					</strong>
+					<span>
+						years
+						<br />
+						old
 					</span>
 				</div>
 				<div className="hero-note">
