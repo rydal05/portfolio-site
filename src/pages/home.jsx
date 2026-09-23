@@ -14,11 +14,11 @@ export default function Home() {
 				aria-label="Game development, full-stack applications, data and automation, creative exploration"
 			>
 				<span>Game development</span>
-				<i>✳</i>
+				<i>—</i>
 				<span>Full-stack applications</span>
-				<i>✳</i>
+				<i>—</i>
 				<span>Data & automation</span>
-				<i>✳</i>
+				<i>—</i>
 				<span>Creative exploration</span>
 			</div>
 			<Portfolio />
@@ -28,21 +28,22 @@ export default function Home() {
 					<p>
 						What everyone wants is but a helping hand. Just enough
 						to save them from the abyss.
-						<br />
-						<em></em>
 					</p>
-					<span className="interlude-mark" aria-hidden="true">
-						✳
-					</span>
 				</blockquote>
 			</Reveal>
-			<Deployed />
 			<Education />
 			<Skills />
+			<Deployed />
 			<Contact />
 			<div className="closing-values">
-				Respect · Honesty · Courage · Rectitude · Loyalty · Honour ·
-				Benevolence <br /> 礼 · 誠 · 勇 · 義 · 忠義 · 名誉 · 仁
+				<p className="text-left">
+					Respect · Honesty · Courage · Rectitude · Loyalty · Honour ·
+					Benevolence <br />
+					礼 · 誠 · 勇 · 義 · 忠義 · 名誉 · 仁 <br />
+				</p>
+				<p className="text-right">
+					― Yamamoto Tsunetomo, Hagakure: The Book of the Samurai
+				</p>
 			</div>
 		</>
 	);
