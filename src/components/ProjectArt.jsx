@@ -1,3 +1,5 @@
+import Icon from "./Icon";
+
 export default function ProjectArt({ kind }) {
 	return (
 		<div className={`project-art art-${kind}`} aria-hidden="true">
@@ -49,8 +51,9 @@ export default function ProjectArt({ kind }) {
 			) : kind === "issues" ? (
 				<div className="issues-art">
 					<span className="art-product-name">
-						Open source <em>makes the world go round.</em>
+						<s>Jira</s> Freeira
 					</span>
+
 					<div className="issue-chips">
 						<span>
 							<i /> help wanted
