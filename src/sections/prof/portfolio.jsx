@@ -4,7 +4,13 @@ import SectionHeading from "../../components/SectionHeading";
 import Reveal from "../../components/Reveal";
 import ProjectArt from "../../components/ProjectArt";
 import Icon from "../../components/Icon";
-const categories = ["All work", "Web", "Games & systems", "Data & AI"];
+const categories = [
+	"All work",
+	"Web",
+	"Games & systems",
+	"Data & AI",
+	"Open Source Contributions",
+];
 export default function Portfolio() {
 	const [category, setCategory] = useState("All work");
 	const [expanded, setExpanded] = useState(false);
@@ -17,9 +23,10 @@ export default function Portfolio() {
 		<section id="portfolio" className="section work-section">
 			<Reveal>
 				<SectionHeading
-					number="01"
+					number="1.0"
 					label="Selected works"
-					title="Made with purpose."
+					title="Projects"
+					accent="Tools, hackathon entries, and more."
 				>
 					A few things I’ve built, broken, and made better. From
 					useful everyday tools to worlds of my own.
