@@ -1,21 +1,9 @@
 import Icon from "./Icon";
 
-export default function ProjectArt({ kind }) {
+export default function ProjectArt({ kind, tag }) {
 	return (
 		<div className={`project-art art-${kind}`} aria-hidden="true">
-			<span className="art-coordinate">
-				{kind === "star"
-					? "02 / GAME ENGINE"
-					: kind === "scraper"
-						? "01 / AUTOMATION"
-						: kind === "course"
-							? "KnightHacks VIII Hackathon  Entry"
-							: kind === "issues"
-								? "BloomKnights Hackathon Entry "
-								: kind === "substreamer"
-									? "Open Source"
-									: "Practical Application Study"}
-			</span>
+			<span className="art-coordinate">{tag ? tag : "No Tag"}</span>
 			{kind === "scraper" ? (
 				<div className="scraper-art">
 					<div className="art-kanji">駿</div>
