@@ -3,7 +3,7 @@ import Icon from "./Icon";
 
 const navigation = [
 	["home", "Home"],
-	["portfolio", "Work"],
+	["portfolio", "Projects"],
 	["education", "Education"],
 	["skills", "Skills"],
 	["contact", "Contact"],
